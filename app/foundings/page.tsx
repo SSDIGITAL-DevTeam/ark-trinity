@@ -21,7 +21,7 @@ export default function FoundingPage() {
             />
 
             <section className="bg-white py-16 md:py-24">
-                <div className="max-w-7xl mx-auto px-6 md:px-12">
+                <div className="container mx-auto px-6 md:px-12 lg:px-16">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
 
                         <div>
@@ -122,9 +122,9 @@ export default function FoundingPage() {
             </section>
 
             <section className="bg-white py-16 md:py-24">
-                <div className="max-w-7xl mx-auto px-6 md:px-12">
+                <div className="container mx-auto px-6 md:px-12 lg:px-16">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-                        <div className="rounded-2xl overflow-hidden shadow-lg">
+                        <div className="rounded-2xl overflow-hidden shadow-lg aspect-square">
                             <Image
                                 src="/images/founding-creed.png"
                                 alt="Founding team discussing strategy"
@@ -160,7 +160,7 @@ export default function FoundingPage() {
             </section>
 
             <section className="bg-[#F5F5F5] py-16 md:py-24">
-                <div className="max-w-7xl mx-auto px-6 md:px-12">
+                <div className="container mx-auto px-6 md:px-12 lg:px-16">
                     <h2 className="text-3xl md:text-4xl font-bold text-error text-center mb-16">
                         The Journey of a Living Institution
                     </h2>
@@ -211,13 +211,13 @@ export default function FoundingPage() {
             </section>
 
             <section className="bg-white pt-12 md:pt-16 overflow-hidden">
-                <div className="max-w-7xl mx-auto px-6 md:px-12">
+                <div className="container mx-auto px-6 md:px-12 lg:px-16">
                     <div className="relative flex flex-col md:flex-row items-center">
 
                         <div className="w-full md:w-1/2 flex flex-col justify-end relative z-10 pb-8 md:pb-0 mb-12">
                             <div className="bg-gray-100 rounded-lg p-5 md:p-6 relative inline-block">
                                 <p className="text-gray-600 leading-relaxed mb-3">
-                                    "Our timeline is not a race — it's an architecture. Every milestone is a pillar, every year a layer."
+                                    &quot;Our timeline is not a race — it&apos;s an architecture. Every milestone is a pillar, every year a layer.&quot;
                                 </p>
                                 <div className="font-bold text-black text-xl">
                                     CKH

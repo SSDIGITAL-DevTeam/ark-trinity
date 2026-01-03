@@ -4,7 +4,7 @@ import Link from "next/link";
 const PillarsSection = () => {
     return (
         <section className="bg-white py-24 md:py-32 overflow-hidden">
-            <div className="max-w-7xl mx-auto px-6 md:px-12 flex flex-col md:flex-row items-center gap-12 md:gap-24">
+            <div className="container mx-auto px-6 md:px-12 lg:px-16 flex flex-col md:flex-row items-center gap-12 md:gap-24">
                 {/* Left Side: Image */}
                 <div className="w-full md:w-1/2 relative">
                     <div className="relative rounded-[40px] overflow-hidden aspect-4/3">

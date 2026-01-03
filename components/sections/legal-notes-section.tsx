@@ -6,7 +6,7 @@ const LegalNotesSection = () => {
             {/* Red gradient on left side */}
             <div className="absolute inset-y-0 left-0 w-1/3 bg-linear-to-r from-red-900/80 to-transparent pointer-events-none" />
 
-            <div className="max-w-7xl mx-auto px-6 md:px-12 py-16 md:py-24">
+            <div className="container mx-auto px-6 md:px-12 lg:px-16 py-16 md:py-24">
                 <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-10 md:gap-20">
 
                     {/* Left: Image */}

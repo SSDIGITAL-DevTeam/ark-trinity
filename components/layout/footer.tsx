@@ -2,7 +2,7 @@ import Link from "next/link";
 import Logo from "@/components/ui/logo";
 
 const Footer = () => {
-    const currentYear = new Date().getFullYear();
+    // const currentYear = new Date().getFullYear();
 
     const quickNavLinks = [
         { label: "Home", href: "/" },
@@ -23,7 +23,7 @@ const Footer = () => {
 
     return (
         <footer className="bg-white">
-            <div className="max-w-7xl mx-auto px-6 md:px-12 py-16 md:py-20">
+            <div className="container mx-auto px-6 md:px-12 lg:px-16 py-16 md:py-20">
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8">
 
                     {/* Left Column: Logo & CTA */}

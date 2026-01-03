@@ -26,7 +26,7 @@ export default function PageHero({ title, image, alt }: PageHeroProps) {
                 </div>
             )}
 
-            <div className="max-w-7xl mx-auto px-6 md:px-12 text-center relative z-10">
+            <div className="container mx-auto px-6 md:px-12 lg:px-16 text-center relative z-10">
                 <h1 className="text-4xl md:text-6xl font-bold text-white tracking-tight">
                     {title}
                 </h1>

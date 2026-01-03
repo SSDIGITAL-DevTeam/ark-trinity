@@ -1,7 +1,7 @@
 const HoldingSection = () => {
     return (
         <section className="bg-[#F5F5F5] py-24 md:py-32 px-6 md:px-12 overflow-hidden">
-            <div className="max-w-6xl mx-auto text-center relative">
+            <div className="container mx-auto px-6 md:px-12 lg:px-16 text-center relative">
                 {/* Subtle decorative elements could go here if needed */}
 
                 <h2 className="text-[28px] md:text-[42px] font-bold text-[#FF4D4D] mb-20 leading-tight max-w-4xl mx-auto">

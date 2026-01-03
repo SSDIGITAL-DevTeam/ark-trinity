@@ -89,13 +89,13 @@ const ModelSection = () => {
     }, [activeSlide]);
 
     return (
-        <section className="bg-white py-24 md:py-32 overflow-hidden">
-            <div className="max-w-7xl mx-auto px-6 md:px-12">
-                <div className="flex flex-col lg:flex-row items-center gap-16 lg:gap-12">
+        <section className="bg-white pb-24 pt-14 md:py-32 overflow-hidden">
+            <div className="container mx-auto px-6 md:px-12 lg:px-16">
+                <div className="flex flex-col lg:flex-row items-center gap-8 md:gap-16 lg:gap-12">
 
                     {/* Left Side: Content & Slider Controls - Takes more space */}
-                    <div className="w-full lg:w-3/5 space-y-10 order-2 lg:order-1">
-                        <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#FF4D4D]">
+                    <div className="w-full lg:w-3/5 space-y-5 md:space-y-10 order-2 lg:order-1 text-center md:text-left">
+                        <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold text-[#FF4D4D]">
                             Ark Trinity Model
                         </h2>
 
@@ -108,7 +108,7 @@ const ModelSection = () => {
                             </p>
                         </div>
 
-                        <div className="flex gap-4">
+                        <div className="flex gap-4 justify-center">
                             <button
                                 onClick={prevSlide}
                                 aria-label="Previous slide"
@@ -128,7 +128,7 @@ const ModelSection = () => {
 
                     {/* Right Side: Trinity Shape - Fixed size, locked */}
                     <div className="w-full lg:w-2/5 flex items-center justify-center order-1 lg:order-2">
-                        <div className="relative w-[320px] h-[300px] md:w-[380px] md:h-[360px] shrink-0 transform scale-[0.6] sm:scale-90 md:scale-100 origin-center">
+                        <div className="relative -ml-10 md:ml-0 w-[320px] h-[320px] md:w-[380px] md:h-[360px] shrink-0 transform scale-[0.6] sm:scale-90 md:scale-100 origin-center">
 
                             {/* ARK Digital - Top Left, rotated -60deg pointing up-right */}
                             <TrinityArrow
@@ -150,7 +150,7 @@ const ModelSection = () => {
                                 onClick={() => setActiveSlide(1)}
                                 flipped={true}
                                 className="bottom-8 -right-30 md:-right-16 absolute"
-                                style={{                                    
+                                style={{
                                     transform: 'rotate(60deg) scale(0.85)',
                                     transformOrigin: 'center center',
                                 }}

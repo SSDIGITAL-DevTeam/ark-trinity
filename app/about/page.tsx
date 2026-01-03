@@ -21,7 +21,7 @@ export default function AboutPage() {
             />
 
             <section className="bg-white py-16 md:py-24">
-                <div className="max-w-7xl mx-auto px-6 md:px-12">
+                <div className="container mx-auto px-6 md:px-12 lg:px-16">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-center">
 
                         <div className="relative">
@@ -54,14 +54,14 @@ export default function AboutPage() {
             </section>
 
             <section className="bg-white pt-12 md:pt-16 overflow-hidden">
-                <div className="max-w-7xl mx-auto px-6 md:px-12">
+                <div className="container mx-auto px-6 md:px-12 lg:px-16">
                     <div className="relative flex flex-col md:flex-row items-center">
 
                         <div className="w-full md:w-1/2 flex flex-col justify-end relative z-10 pb-8 md:pb-0 mb-12">
                             <div className="bg-gray-100 rounded-lg p-5 md:p-6 relative inline-block">
                                 <p className="text-gray-600 leading-relaxed mb-3">
-                                    "I've seen how capital chases technology and how technology outruns consciousness. ARK
-                                    Trinity is my answer — a bridge between all three."
+                                    &quot;I&apos;ve seen how capital chases technology and how technology outruns consciousness. ARK
+                                    Trinity is my answer — a bridge between all three.&quot;
                                 </p>
                                 <div className="font-bold text-black text-xl">
                                     CKH, Founder & Chief Architect
@@ -91,7 +91,7 @@ export default function AboutPage() {
             </section>
 
             <section className="bg-[#F5F5F5] py-16 md:py-24">
-                <div className="max-w-7xl mx-auto px-6 md:px-12">
+                <div className="container mx-auto px-6 md:px-12 lg:px-16">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20">
 
                         <div>
@@ -206,7 +206,7 @@ export default function AboutPage() {
             </section>
 
             <section className="bg-[#F5F5F5] pb-16 md:pb-24">
-                <div className="max-w-7xl mx-auto px-6 md:px-12">
+                <div className="container mx-auto px-6 md:px-12 lg:px-16">
                     <div className="bg-white rounded-lg p-6 md:p-8">
                         <div className="flex flex-col md:flex-row items-center gap-8 md:gap-16">
                             <h2 className="text-3xl md:text-6xl font-bold text-black">
@@ -232,7 +232,7 @@ export default function AboutPage() {
             </section>
 
             <section className="bg-white py-16 md:py-24">
-                <div className="max-w-7xl mx-auto px-6 md:px-12">
+                <div className="container mx-auto px-6 md:px-12 lg:px-16">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
 
                         <div>

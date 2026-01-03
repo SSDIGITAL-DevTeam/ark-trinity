@@ -23,7 +23,7 @@ export default function MIFPage() {
             />
 
             <section className="bg-white py-16 md:py-24">
-                <div className="max-w-7xl mx-auto px-6 md:px-12">
+                <div className="container mx-auto px-6 md:px-12 lg:px-16">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-center">
 
                         <div className="relative">
@@ -65,7 +65,7 @@ export default function MIFPage() {
             </section>
 
             <section className="bg-[#F5F5F5] py-16 md:py-24">
-                <div className="max-w-7xl mx-auto px-6 md:px-12">
+                <div className="container mx-auto px-6 md:px-12 lg:px-16">
                     <h2 className="text-2xl md:text-3xl font-bold text-error text-center mb-12">
                         Updated Investor Terms:
                     </h2>
@@ -161,7 +161,7 @@ export default function MIFPage() {
             </section>
 
             <section className="bg-[#F5F5F5] py-16 md:py-24">
-                <div className="max-w-7xl mx-auto px-6 md:px-12">
+                <div className="container mx-auto px-6 md:px-12 lg:px-16">
                     <h2 className="text-2xl md:text-3xl font-bold text-error text-center mb-16">
                         Milestones
                     </h2>
