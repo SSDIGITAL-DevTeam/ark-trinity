@@ -1,7 +1,8 @@
 import Image from "next/image";
 import { Metadata } from "next";
-import PageHero from "@/components/ui/page-hero";
 import { Mail, Building2 } from "lucide-react";
+import PageHero from "@/components/ui/page-hero";
+import ContactForm from "@/components/sections/contact-form";
 
 export const metadata: Metadata = {
     title: "Contact Us - ARK Trinity",
@@ -92,61 +93,7 @@ export default function ContactPage() {
                     </h2>
 
                     <div className="bg-white rounded-xl shadow-sm p-8 md:p-10">
-                        <form className="space-y-6">
-                            <div className="space-y-2">
-                                <label htmlFor="name" className="block text-sm font-semibold text-gray-700">Name</label>
-                                <input
-                                    type="text"
-                                    id="name"
-                                    placeholder="Your name"
-                                    className="input input-bordered w-full focus:input-error"
-                                />
-                            </div>
-
-                            <div className="space-y-2">
-                                <label htmlFor="email" className="block text-sm font-semibold text-gray-700">Email</label>
-                                <input
-                                    type="email"
-                                    id="email"
-                                    placeholder="your@emailaddress.com"
-                                    className="input input-bordered w-full focus:input-error"
-                                />
-                            </div>
-
-                            <div className="space-y-2">
-                                <label htmlFor="phone" className="block text-sm font-semibold text-gray-700">Contact Number</label>
-                                <div className="flex gap-3">
-                                    <select className="select select-bordered focus:select-error w-24 shrink-0 bg-white">
-                                        <option>+65</option>
-                                        <option>+62</option>
-                                        <option>+1</option>
-                                    </select>
-                                    <input
-                                        type="tel"
-                                        id="phone"
-                                        placeholder="0000 0000"
-                                        className="input input-bordered w-full focus:input-error"
-                                    />
-                                </div>
-                            </div>
-
-                            <div className="space-y-2">
-                                <label htmlFor="message" className="block text-sm font-semibold text-gray-700">How Can We Help?</label>
-                                <textarea
-                                    id="message"
-                                    rows={4}
-                                    placeholder="Let us know we can help with your project"
-                                    className="textarea textarea-bordered w-full focus:textarea-error resize-none text-base"
-                                ></textarea>
-                            </div>
-
-                            <button
-                                type="submit"
-                                className="btn btn-error w-full text-white text-lg font-bold"
-                            >
-                                Submit
-                            </button>
-                        </form>
+                        <ContactForm />
                     </div>
                 </div>
             </section>

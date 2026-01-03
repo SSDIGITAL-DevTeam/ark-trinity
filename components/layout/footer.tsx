@@ -70,7 +70,7 @@ const Footer = () => {
                 </div>
             </div>
 
-            <p className="text-center text-black text-base font-semibold tracking-wide mb-20">
+            <p className="text-center text-gray-500 text-sm font-medium tracking-wide mb-20">
                 © 2026 ARK Trinity Holdings Pte. Ltd. | All Rights Reserved | Privacy & Governance Policy
             </p>
         </footer>

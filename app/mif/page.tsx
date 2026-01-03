@@ -1,7 +1,8 @@
 import Image from "next/image";
+import Link from "next/link";
 import { Metadata } from "next";
 import PageHero from "@/components/ui/page-hero";
-import { Download } from "lucide-react";
+import { Download, Percent, Repeat, TrendingUp, PieChart, Globe, ArrowRight } from "lucide-react";
 import { DollarIcon, AISystemIcon, MoneyBuildingIcon, LoopIcon, EquityIcon } from "@/components/icons/mif-icons";
 
 export const metadata: Metadata = {
@@ -29,7 +30,7 @@ export default function MIFPage() {
                         <div className="relative">
                             <div className="rounded-lg overflow-hidden shadow-lg">
                                 <Image
-                                    src="/images/mif/elsa-olofsson-5fiN4kVgj44-unsplash 1.png"
+                                    src="/images/mif/asian_business_tech_meeting_hd.png"
                                     alt="Professional signing business documents for MIF"
                                     width={500}
                                     height={350}
@@ -50,10 +51,10 @@ export default function MIFPage() {
                             </p>
 
                             <div className="flex flex-wrap gap-4">
-                                <button className="btn btn-error text-white rounded-full px-6">
+                                <Link href="/contact" className="btn btn-error text-white rounded-full px-6">
                                     Request Investor Access
-                                </button>
-                                <button className="btn btn-outline border-gray-300 text-gray-700 hover:bg-gray-100 rounded-full px-6">
+                                </Link>
+                                <button className="hidden btn btn-outline border-gray-300 text-gray-700 hover:bg-gray-100 rounded-full px-6">
                                     <Download className="w-4 h-4 mr-2" />
                                     Download MIF Brief
                                 </button>
@@ -71,25 +72,40 @@ export default function MIFPage() {
                     </h2>
 
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
-                        <div className="bg-white rounded-lg p-6 text-center">
+                        <div className="bg-white rounded-lg p-6 text-center flex flex-col items-center">
+                            <div className="w-12 h-12 bg-red-50 rounded-full flex items-center justify-center mb-4">
+                                <Percent className="w-6 h-6 text-error" />
+                            </div>
                             <h3 className="text-lg font-bold text-black mb-2">1% monthly coupon<br />(12% p.a.)</h3>
                         </div>
 
-                        <div className="bg-white rounded-lg p-6 text-center">
+                        <div className="bg-white rounded-lg p-6 text-center flex flex-col items-center">
+                            <div className="w-12 h-12 bg-red-50 rounded-full flex items-center justify-center mb-4">
+                                <Repeat className="w-6 h-6 text-error" />
+                            </div>
                             <h3 className="text-lg font-bold text-black mb-2">2x capital<br />redemption after 12-18 months</h3>
                         </div>
 
-                        <div className="bg-white rounded-lg p-6 text-center">
+                        <div className="bg-white rounded-lg p-6 text-center flex flex-col items-center">
+                            <div className="w-12 h-12 bg-red-50 rounded-full flex items-center justify-center mb-4">
+                                <TrendingUp className="w-6 h-6 text-error" />
+                            </div>
                             <h3 className="text-lg font-bold text-black mb-2">5x IPO / Pre-IPO equity<br />option at valuation cap SGD 50M</h3>
                         </div>
                     </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        <div className="bg-white rounded-lg p-6 text-center">
+                        <div className="bg-white rounded-lg p-6 text-center flex flex-col items-center">
+                            <div className="w-12 h-12 bg-red-50 rounded-full flex items-center justify-center mb-4">
+                                <PieChart className="w-6 h-6 text-error" />
+                            </div>
                             <h3 className="text-lg font-bold text-black mb-2">Allocation: 70% pods, 20% AI IP,<br />10% governance & reserves</h3>
                         </div>
 
-                        <div className="bg-white rounded-lg p-6 text-center">
+                        <div className="bg-white rounded-lg p-6 text-center flex flex-col items-center">
+                            <div className="w-12 h-12 bg-red-50 rounded-full flex items-center justify-center mb-4">
+                                <Globe className="w-6 h-6 text-error" />
+                            </div>
                             <h3 className="text-lg font-bold text-black mb-2">MIF operates under Singapore VCC,<br />with regional feeder funds pooling local capital</h3>
                         </div>
                     </div>
@@ -106,28 +122,28 @@ export default function MIFPage() {
                             <span className="text-base font-medium">USD 300K</span>
                         </div>
 
-                        <span className="text-white/80 text-2xl mt-2">→</span>
+                        <ArrowRight className="text-white/80 w-8 h-8 mt-4" />
 
                         <div className="flex flex-col items-center text-white flex-1">
                             <AISystemIcon className="w-12 h-12 mb-3" />
                             <span className="text-base font-medium">AI System</span>
                         </div>
 
-                        <span className="text-white/80 text-2xl mt-2">→</span>
+                        <ArrowRight className="text-white/80 w-8 h-8 mt-4" />
 
                         <div className="flex flex-col items-center text-white flex-1">
                             <MoneyBuildingIcon className="w-12 h-12 mb-3" />
                             <span className="text-base font-medium">$1M ARR</span>
                         </div>
 
-                        <span className="text-white/80 text-2xl mt-2">→</span>
+                        <ArrowRight className="text-white/80 w-8 h-8 mt-4" />
 
                         <div className="flex flex-col items-center text-white flex-1">
                             <LoopIcon className="w-12 h-12 mb-3" />
                             <span className="text-base font-medium">Profit Loop</span>
                         </div>
 
-                        <span className="text-white/80 text-2xl mt-2">→</span>
+                        <ArrowRight className="text-white/80 w-8 h-8 mt-4" />
 
                         <div className="flex flex-col items-center text-white flex-1">
                             <EquityIcon className="w-12 h-12 mb-3" />
@@ -214,9 +230,9 @@ export default function MIFPage() {
                     </div>
 
                     <div className="flex justify-center mt-12">
-                        <button className="btn btn-error text-white rounded-full px-8">
+                        <Link href="/contact" className="btn btn-error text-white rounded-full px-8">
                             Join MIF
-                        </button>
+                        </Link>
                     </div>
                 </div>
             </section>

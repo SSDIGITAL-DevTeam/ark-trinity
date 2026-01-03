@@ -21,7 +21,9 @@ export default function Navbar() {
 
     const renderMenuItems = (items: MenuItem[], isMobile: boolean) => {
         return items.map((item, index) => {
-            const isActive = pathname === item.href;
+            const isActive = item.href === "/"
+                ? pathname === "/"
+                : pathname.startsWith(item.href || "");
 
             return (
                 <li key={index}>
@@ -55,15 +57,17 @@ export default function Navbar() {
     return (
         <div className="bg-black sticky top-0 z-50">
             <div className="navbar text-white shadow-sm container mx-auto px-6 md:px-12 lg:px-16 py-4 lg:grid lg:grid-cols-3">
-                <div className="lg:justify-start flex-1 lg:flex-none flex items-center">
-                    <label htmlFor="main-drawer" className="btn btn-ghost lg:hidden mr-2">
+                <div className="relative flex lg:justify-start flex-1 lg:flex-none items-center">
+                    <label htmlFor="main-drawer" className="btn btn-ghost lg:hidden mr-2 z-20">
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" />
                         </svg>
                     </label>
-                    <Link href="/">
-                        <Logo />
-                    </Link>
+                    <div className="lg:static absolute left-1/2 -translate-x-1/2 lg:translate-x-0 z-10 flex justify-center">
+                        <Link href="/">
+                            <Logo />
+                        </Link>
+                    </div>
                 </div>
 
                 <div className="hidden lg:flex justify-center">

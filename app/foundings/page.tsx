@@ -67,7 +67,7 @@ export default function FoundingPage() {
                                         alt="CKH - Capital Leverage"
                                         width={200}
                                         height={266}
-                                        className="h-full w-full object-cover object-center"
+                                        className="h-full w-full object-cover object-top brightness-110"
                                     />
                                 </div>
                             </div>
@@ -89,7 +89,7 @@ export default function FoundingPage() {
                                         alt="Robert - Digital Transformation"
                                         width={200}
                                         height={266}
-                                        className="h-full w-full object-cover object-center"
+                                        className="h-full w-full object-cover object-top scale-x-[-1]"
                                     />
                                 </div>
                             </div>
@@ -111,7 +111,7 @@ export default function FoundingPage() {
                                         alt="Austin - AI Integration"
                                         width={200}
                                         height={266}
-                                        className="h-full w-full object-cover object-center"
+                                        className="h-full w-full object-cover object-top"
                                     />
                                 </div>
                             </div>
@@ -232,12 +232,12 @@ export default function FoundingPage() {
                         </div>
 
                         <div className="w-full md:w-1/2 flex justify-center md:justify-end">
-                            <div className="relative h-[500px] w-[500px]">
+                            <div className="relative h-[400px] w-full md:h-[500px] md:max-w-[500px]">
                                 <Image
                                     src="/images/ceo-about.png"
                                     alt="CKH - Founder Quote"
                                     fill
-                                    className="object-cover object-center"
+                                    className="object-cover object-top"
                                 />
                             </div>
                         </div>

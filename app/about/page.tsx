@@ -17,7 +17,7 @@ export default function AboutPage() {
         <main>
             <PageHero
                 title="ABOUT US"
-                image="/modern_skyscraper_glass_facade_1767324657915.png"
+                image="/images/homepage/modern_asian_skyscraper_hd.png"
             />
 
             <section className="bg-white py-16 md:py-24">
@@ -76,12 +76,12 @@ export default function AboutPage() {
                         </div>
 
                         <div className="w-full md:w-1/2 flex justify-center md:justify-end">
-                            <div className="relative h-[500px] w-[500px]">
+                            <div className="relative h-[400px] w-full md:h-[500px] md:max-w-[500px] rounded-lg overflow-hidden shadow-lg">
                                 <Image
                                     src="/images/ceo-about.png"
                                     alt="CKH, Founder & Chief Architect of ARK Trinity"
                                     fill
-                                    className="object-cover object-center"
+                                    className="object-cover object-top"
                                 />
                             </div>
                         </div>
@@ -99,34 +99,13 @@ export default function AboutPage() {
                                 Mission & Vision
                             </h2>
 
-                            <div className="grid grid-cols-3 gap-4 mb-8">
-                                <div className="aspect-square bg-gray-300 rounded-lg overflow-hidden">
-                                    <Image
-                                        src="/images/hands-1.jpg"
-                                        alt="Team collaboration for ARK Trinity mission"
-                                        width={200}
-                                        height={200}
-                                        className="w-full h-full object-cover grayscale"
-                                    />
-                                </div>
-                                <div className="aspect-square bg-gray-300 rounded-lg overflow-hidden">
-                                    <Image
-                                        src="/images/hands-2.jpg"
-                                        alt="Unity in building ARK Trinity"
-                                        width={200}
-                                        height={200}
-                                        className="w-full h-full object-cover grayscale"
-                                    />
-                                </div>
-                                <div className="aspect-square bg-gray-300 rounded-lg overflow-hidden">
-                                    <Image
-                                        src="/images/hands-3.jpg"
-                                        alt="Partnership and growth"
-                                        width={200}
-                                        height={200}
-                                        className="w-full h-full object-cover grayscale"
-                                    />
-                                </div>
+                            <div className="relative aspect-video bg-gray-300 rounded-lg overflow-hidden mb-8 shadow-md">
+                                <Image
+                                    src="/images/about/asian_collaborative_hands_hd.png"
+                                    alt="Team collaboration for ARK Trinity mission"
+                                    fill
+                                    className="object-cover"
+                                />
                             </div>
 
                             <div className="bg-white rounded-lg p-6 mb-4">
@@ -207,25 +186,47 @@ export default function AboutPage() {
 
             <section className="bg-[#F5F5F5] pb-16 md:pb-24">
                 <div className="container mx-auto px-6 md:px-12 lg:px-16">
-                    <div className="bg-white rounded-lg p-6 md:p-8">
-                        <div className="flex flex-col md:flex-row items-center gap-8 md:gap-16">
-                            <h2 className="text-3xl md:text-6xl font-bold text-black">
-                                Core Values
-                            </h2>
-                            <div className="flex flex-wrap items-center gap-8 md:gap-12">
-                                <div className="flex items-center gap-3">
-                                    <div className="w-4 h-4 bg-error rounded-full" />
-                                    <span className="text-error font-semibold text-xl">Discipline</span>
-                                </div>
-                                <div className="flex items-center gap-3">
-                                    <div className="w-4 h-4 bg-error rounded-full" />
-                                    <span className="text-error font-semibold text-xl">Integrity</span>
-                                </div>
-                                <div className="flex items-center gap-3">
-                                    <div className="w-4 h-4 bg-error rounded-full" />
-                                    <span className="text-error font-semibold text-xl">Consciousness</span>
-                                </div>
+                    <div className="mb-12 text-center">
+                        <h2 className="text-3xl md:text-5xl font-bold text-black mb-4">
+                            Core Values
+                        </h2>
+                        <p className="text-gray-600 max-w-2xl mx-auto">
+                            The principles that guide our architecture of intelligent growth.
+                        </p>
+                    </div>
+
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        {/* Discipline */}
+                        <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 flex flex-col items-center text-center">
+                            <div className="w-12 h-12 bg-error/10 rounded-full flex items-center justify-center mb-6">
+                                <div className="w-4 h-4 bg-error rounded-full" />
                             </div>
+                            <h3 className="text-xl font-bold text-black mb-3">Discipline</h3>
+                            <p className="text-gray-600 text-sm leading-relaxed">
+                                Rigorous adherence to data-driven strategies and structural precision.
+                            </p>
+                        </div>
+
+                        {/* Integrity */}
+                        <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 flex flex-col items-center text-center">
+                            <div className="w-12 h-12 bg-error/10 rounded-full flex items-center justify-center mb-6">
+                                <div className="w-4 h-4 bg-error rounded-full" />
+                            </div>
+                            <h3 className="text-xl font-bold text-black mb-3">Integrity</h3>
+                            <p className="text-gray-600 text-sm leading-relaxed">
+                                Unwavering commitment to transparent, ethical, and sustainable value creation.
+                            </p>
+                        </div>
+
+                        {/* Consciousness */}
+                        <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 flex flex-col items-center text-center">
+                            <div className="w-12 h-12 bg-error/10 rounded-full flex items-center justify-center mb-6">
+                                <div className="w-4 h-4 bg-error rounded-full" />
+                            </div>
+                            <h3 className="text-xl font-bold text-black mb-3">Consciousness</h3>
+                            <p className="text-gray-600 text-sm leading-relaxed">
+                                Awareness of our impact on society, economy, and the future of intelligence.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -255,7 +256,7 @@ export default function AboutPage() {
                         <div className="relative">
                             <div className="rounded-lg overflow-hidden">
                                 <Image
-                                    src="/images/about/yibei-geng--UdYbiywGeg-unsplash 1.png"
+                                    src="/images/about/modern_asian_tech_office_hd.png"
                                     alt="Modern office architecture symbolizing ARK Trinity growth"
                                     width={600}
                                     height={400}

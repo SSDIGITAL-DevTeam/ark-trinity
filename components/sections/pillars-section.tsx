@@ -9,7 +9,7 @@ const PillarsSection = () => {
                 <div className="w-full md:w-1/2 relative">
                     <div className="relative rounded-[40px] overflow-hidden aspect-4/3">
                         <Image
-                            src="/images/homepage/phil-desforges-ow1mML1sOi0-unsplash 1.png"
+                            src="/images/homepage/modern_asian_skyscraper_hd.png"
                             alt="Modern architecture representing growth and structure"
                             fill
                             className="object-cover"
