@@ -76,12 +76,12 @@ export default function AboutPage() {
                         </div>
 
                         <div className="w-full md:w-1/2 flex justify-center md:justify-end">
-                            <div className="relative h-[400px] w-full md:h-[500px] md:max-w-[500px] rounded-lg overflow-hidden shadow-lg">
+                            <div className="relative h-[400px] w-full md:h-[500px] md:max-w-[500px] rounded-lg overflow-hidden">
                                 <Image
                                     src="/images/ceo-about.png"
                                     alt="CKH, Founder & Chief Architect of ARK Trinity"
                                     fill
-                                    className="object-cover object-top"
+                                    className="object-contain object-top relative md:pl-8"
                                 />
                             </div>
                         </div>

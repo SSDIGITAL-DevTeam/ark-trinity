@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Metadata } from "next";
 import PageHero from "@/components/ui/page-hero";
-import { Download, Percent, Repeat, TrendingUp, PieChart, Globe, ArrowRight } from "lucide-react";
+import { Download, Percent, Repeat, TrendingUp, PieChart, Globe, ArrowRight, ArrowDown } from "lucide-react";
 import { DollarIcon, AISystemIcon, MoneyBuildingIcon, LoopIcon, EquityIcon } from "@/components/icons/mif-icons";
 
 export const metadata: Metadata = {
@@ -151,26 +151,38 @@ export default function MIFPage() {
                         </div>
                     </div>
 
-                    <div className="md:hidden flex flex-wrap justify-center gap-x-8 gap-y-8 text-center">
-                        <div className="flex flex-col items-center text-white w-[40%]">
-                            <DollarIcon className="w-8 h-6 mb-1" />
-                            <span className="text-xs">USD 300K</span>
+                    <div className="md:hidden flex flex-col items-center space-y-8 text-center">
+                        <div className="flex flex-col items-center text-white">
+                            <DollarIcon className="w-14 h-12 mb-2" />
+                            <span className="text-base font-medium">USD 300K</span>
                         </div>
-                        <div className="flex flex-col items-center text-white w-[40%]">
-                            <AISystemIcon className="w-8 h-8 mb-1" />
-                            <span className="text-xs">AI System</span>
+
+                        <ArrowDown className="text-white/80 w-8 h-8" />
+
+                        <div className="flex flex-col items-center text-white">
+                            <AISystemIcon className="w-14 h-14 mb-2" />
+                            <span className="text-base font-medium">AI System</span>
                         </div>
-                        <div className="flex flex-col items-center text-white w-[40%]">
-                            <MoneyBuildingIcon className="w-8 h-8 mb-1" />
-                            <span className="text-xs">$1M ARR</span>
+
+                        <ArrowDown className="text-white/80 w-8 h-8" />
+
+                        <div className="flex flex-col items-center text-white">
+                            <MoneyBuildingIcon className="w-14 h-14 mb-2" />
+                            <span className="text-base font-medium">$1M ARR</span>
                         </div>
-                        <div className="flex flex-col items-center text-white w-[40%]">
-                            <LoopIcon className="w-8 h-8 mb-1" />
-                            <span className="text-xs">Profit Loop</span>
+
+                        <ArrowDown className="text-white/80 w-8 h-8" />
+
+                        <div className="flex flex-col items-center text-white">
+                            <LoopIcon className="w-14 h-14 mb-2" />
+                            <span className="text-base font-medium">Profit Loop</span>
                         </div>
-                        <div className="flex flex-col items-center text-white w-[40%]">
-                            <EquityIcon className="w-8 h-8 mb-1" />
-                            <span className="text-xs">Equity Conversion</span>
+
+                        <ArrowDown className="text-white/80 w-8 h-8" />
+
+                        <div className="flex flex-col items-center text-white">
+                            <EquityIcon className="w-14 h-14 mb-2" />
+                            <span className="text-base font-medium">Equity Conversion</span>
                         </div>
                     </div>
                 </div>
@@ -190,12 +202,12 @@ export default function MIFPage() {
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
                             <div className="relative pl-10 md:pl-0">
                                 <div className="absolute left-0 top-5 md:top-0 md:left-1/2 md:-translate-x-1/2 z-10">
-                                    <div className="w-7 h-7 bg-white border-3 border-error rounded-full flex items-center justify-center">
+                                    <div className="w-7 h-7 bg-white border-3 md:border-4 border-error rounded-full flex items-center justify-center">
                                         <div className="w-2.5 h-2.5 bg-error rounded-full" />
                                     </div>
-                                    <div className="absolute bg-error w-3 h-0.5 top-3.5 left-7 md:w-0.5 md:h-5 md:top-7 md:left-1/2 md:-translate-x-1/2" />
+                                    <div className="absolute bg-error w-3 h-0.5 top-3.5 left-7 md:w-1 md:h-10 md:top-7 md:left-1/2 md:-translate-x-1/2" />
                                 </div>
-                                <div className="bg-white rounded-lg p-5 md:mt-10 z-10 relative">
+                                <div className="bg-white rounded-lg p-5 md:mt-15 z-10 relative">
                                     <h3 className="text-lg font-bold text-black mb-1">2027</h3>
                                     <p className="text-gray-500 text-sm">First portfolio units IPO-ready</p>
                                 </div>
@@ -203,12 +215,12 @@ export default function MIFPage() {
 
                             <div className="relative pl-10 md:pl-0">
                                 <div className="absolute left-0 top-5 md:top-0 md:left-1/2 md:-translate-x-1/2 z-10">
-                                    <div className="w-7 h-7 bg-white border-3 border-error rounded-full flex items-center justify-center">
+                                    <div className="w-7 h-7 bg-white border-3 md:border-4 border-error rounded-full flex items-center justify-center">
                                         <div className="w-2.5 h-2.5 bg-error rounded-full" />
                                     </div>
-                                    <div className="absolute bg-error w-3 h-0.5 top-3.5 left-7 md:w-0.5 md:h-5 md:top-7 md:left-1/2 md:-translate-x-1/2" />
+                                    <div className="absolute bg-error w-3 h-0.5 top-3.5 left-7 md:w-1 md:h-10 md:top-7 md:left-1/2 md:-translate-x-1/2" />
                                 </div>
-                                <div className="bg-white rounded-lg p-5 md:mt-10 z-10 relative">
+                                <div className="bg-white rounded-lg p-5 md:mt-15 z-10 relative">
                                     <h3 className="text-lg font-bold text-black mb-1">2031</h3>
                                     <p className="text-gray-500 text-sm">Institutional buyout</p>
                                 </div>
@@ -216,12 +228,12 @@ export default function MIFPage() {
 
                             <div className="relative pl-10 md:pl-0">
                                 <div className="absolute left-0 top-5 md:top-0 md:left-1/2 md:-translate-x-1/2 z-10">
-                                    <div className="w-7 h-7 bg-white border-3 border-error rounded-full flex items-center justify-center">
+                                    <div className="w-7 h-7 bg-white border-3 md:border-4 border-error rounded-full flex items-center justify-center">
                                         <div className="w-2.5 h-2.5 bg-error rounded-full" />
                                     </div>
-                                    <div className="absolute bg-error w-3 h-0.5 top-3.5 left-7 md:w-0.5 md:h-5 md:top-7 md:left-1/2 md:-translate-x-1/2" />
+                                    <div className="absolute bg-error w-3 h-0.5 top-3.5 left-7 md:w-1 md:h-10 md:top-7 md:left-1/2 md:-translate-x-1/2" />
                                 </div>
-                                <div className="bg-white rounded-lg p-5 md:mt-10 z-10 relative">
+                                <div className="bg-white rounded-lg p-5 md:mt-15 z-10 relative">
                                     <h3 className="text-lg font-bold text-black mb-1">2033</h3>
                                     <p className="text-gray-500 text-sm">Global AI expansion</p>
                                 </div>

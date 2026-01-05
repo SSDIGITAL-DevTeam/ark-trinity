@@ -18,6 +18,10 @@
     background-color: var(--color-red-500);
 }
 
+.border-error {
+    border-color: var(--color-red-500);
+}
+
 .triangle-card {
     background-color: #111;
     /* Warna latar belakang gelap */

@@ -237,7 +237,7 @@ export default function FoundingPage() {
                                     src="/images/ceo-about.png"
                                     alt="CKH - Founder Quote"
                                     fill
-                                    className="object-cover object-top"
+                                    className="object-contain object-top relative md:pl-8"
                                 />
                             </div>
                         </div>
