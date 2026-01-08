@@ -19,6 +19,7 @@ export default function PageHero({ title, image, alt }: PageHeroProps) {
                         src={image}
                         alt={alt || `Hero image for ${title}`}
                         fill
+                        sizes="100vw"
                         className="object-cover object-center grayscale"
                         priority
                     />

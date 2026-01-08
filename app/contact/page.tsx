@@ -11,7 +11,13 @@ export const metadata: Metadata = {
         title: "Contact ARK Trinity | Enter the Ark",
         description: "Engaging with intelligence, integrity, and intention for AI-powered business growth.",
         images: ["/images/contact-hero.png"],
-    }
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Contact ARK Trinity | Enter the Ark",
+        description: "Engaging with intelligence, integrity, and intention for AI-powered business growth.",
+        images: ["/images/contact-hero.png"],
+    },
 };
 
 export default function ContactPage() {
@@ -79,6 +85,7 @@ export default function ContactPage() {
                                 alt="Team collaborating on contact page"
                                 width={600}
                                 height={400}
+                                sizes="(max-width: 1024px) 100vw, 50vw"
                                 className="w-full h-full object-cover"
                             />
                         </div>

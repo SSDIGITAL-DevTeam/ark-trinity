@@ -12,6 +12,7 @@ const PillarsSection = () => {
                             src="/images/homepage/modern_asian_skyscraper_hd.png"
                             alt="Modern architecture representing growth and structure"
                             fill
+                            sizes="(max-width: 768px) 100vw, 50vw"
                             className="object-cover"
                             priority
                         />

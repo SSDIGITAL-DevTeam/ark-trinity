@@ -7,9 +7,15 @@ export const metadata: Metadata = {
     description: "Three Minds. One Architecture of Intelligence. Meet the founders of ARK Trinity.",
     openGraph: {
         title: "Founding - ARK Trinity | Three Minds",
-        description: "Capital multiplies, Digital executes, AI flows. Meet the founders CKH, Robert, and Austin.",
+        description: "Capital multiplies, Digital executes, AI flows. Meet the founders of ARK Trinity.",
         images: ["/images/founding-creed.png"],
-    }
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Founding - ARK Trinity | Three Minds",
+        description: "Capital multiplies, Digital executes, AI flows. Meet the founders of ARK Trinity.",
+        images: ["/images/founding-creed.png"],
+    },
 };
 
 export default function FoundingPage() {
@@ -39,6 +45,7 @@ export default function FoundingPage() {
                                     alt="Modern skyscraper architecture illustrating growth"
                                     width={500}
                                     height={350}
+                                    sizes="(max-width: 1024px) 100vw, 50vw"
                                     className="w-full h-auto object-cover grayscale aspect-5/3"
                                 />
                             </div>
@@ -152,6 +159,7 @@ export default function FoundingPage() {
                                 alt="Founding team discussing strategy"
                                 width={600}
                                 height={400}
+                                sizes="(max-width: 1024px) 100vw, 50vw"
                                 className="w-full h-auto object-cover"
                             />
                         </div>

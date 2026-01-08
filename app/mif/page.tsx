@@ -11,8 +11,14 @@ export const metadata: Metadata = {
     openGraph: {
         title: "Market Invasion Fund (MIF) | ARK Trinity",
         description: "A strategic capital engine that converts investment capital into replicable digital assets across Southeast Asia.",
-        images: ["/images/mif/elsa-olofsson-5fiN4kVgj44-unsplash 1.png"],
-    }
+        images: ["/images/mif/asian_business_tech_meeting_hd.png"],
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Market Invasion Fund (MIF) | ARK Trinity",
+        description: "A strategic capital engine that converts investment capital into replicable digital assets.",
+        images: ["/images/mif/asian_business_tech_meeting_hd.png"],
+    },
 };
 
 export default function MIFPage() {
@@ -34,6 +40,7 @@ export default function MIFPage() {
                                     alt="Professional signing business documents for MIF"
                                     width={500}
                                     height={350}
+                                    sizes="(max-width: 768px) 100vw, 50vw"
                                     className="w-full h-auto object-cover"
                                 />
                             </div>

@@ -8,8 +8,14 @@ export const metadata: Metadata = {
     openGraph: {
         title: "About ARK Trinity | Vision & Mission",
         description: "Founded with Vision. Built with Discipline. Driven by Destiny. Transforming AI innovation into permanent enterprises.",
-        images: ["/images/about/embe-sublett-nxZDMUQhN4o-unsplash 1.png"],
-    }
+        images: ["/images/about/abbe-sublett-nxZDMUQhN4o-unsplash 1.png"],
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "About ARK Trinity | Vision & Mission",
+        description: "Founded with Vision. Built with Discipline. Driven by Destiny.",
+        images: ["/images/about/abbe-sublett-nxZDMUQhN4o-unsplash 1.png"],
+    },
 };
 
 export default function AboutPage() {
@@ -31,6 +37,7 @@ export default function AboutPage() {
                                     alt="Modern skyscraper representing ARK Trinity's robust foundation"
                                     width={500}
                                     height={600}
+                                    sizes="(max-width: 768px) 100vw, 50vw"
                                     className="w-full h-auto object-cover"
                                 />
                             </div>
@@ -81,6 +88,7 @@ export default function AboutPage() {
                                     src="/images/ceo-about.png"
                                     alt="CKH, Founder & Chief Architect of ARK Trinity"
                                     fill
+                                    sizes="(max-width: 768px) 100vw, 50vw"
                                     className="object-contain object-top relative md:pl-8"
                                 />
                             </div>
@@ -104,6 +112,7 @@ export default function AboutPage() {
                                     src="/images/about/asian_collaborative_hands_hd.png"
                                     alt="Team collaboration for ARK Trinity mission"
                                     fill
+                                    sizes="(max-width: 1024px) 100vw, 50vw"
                                     className="object-cover"
                                 />
                             </div>
@@ -260,6 +269,7 @@ export default function AboutPage() {
                                     alt="Modern office architecture symbolizing ARK Trinity growth"
                                     width={600}
                                     height={400}
+                                    sizes="(max-width: 1024px) 100vw, 50vw"
                                     className="w-full h-auto object-cover"
                                 />
                             </div>

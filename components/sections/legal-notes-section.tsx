@@ -15,8 +15,9 @@ const LegalNotesSection = () => {
                             <Image
                                 src="/images/legalnotes.png"
                                 alt="Legal document signing"
-                                width={400}
-                                height={280}
+                                width={600}
+                                height={420}
+                                sizes="(max-width: 768px) 100vw, 400px"
                                 className="w-full h-auto object-cover"
                             />
                         </div>
