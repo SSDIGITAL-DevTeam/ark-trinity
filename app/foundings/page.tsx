@@ -115,6 +115,28 @@ export default function FoundingPage() {
                                     />
                                 </div>
                             </div>
+
+                            <div className="bg-[#F5F5F5] rounded-xl flex items-stretch relative overflow-hidden min-h-[140px]">
+                                <div className="flex-1 p-6 pr-36 z-10">
+                                    <h3 className="text-lg font-bold mb-1">
+                                        <span className="text-error">Lim How Teck</span>
+                                        <span className="text-black"> — Board of Advisors</span>
+                                    </h3>
+                                    <p className="text-gray-500 text-sm leading-relaxed">
+                                        Provides strategic guidance and expert insight to
+                                        support each pod&apos;s growth.
+                                    </p>
+                                </div>
+                                <div className="absolute right-0 bottom-0 h-full w-auto aspect-square">
+                                    <Image
+                                        src="/images/foundings/lim-how-teck.png"
+                                        alt="Lim How Teck - Board of Advisors"
+                                        width={200}
+                                        height={266}
+                                        className="h-full w-full object-cover object-top"
+                                    />
+                                </div>
+                            </div>
                         </div>
 
                     </div>
