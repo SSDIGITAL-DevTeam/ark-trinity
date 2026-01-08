@@ -67,7 +67,7 @@ export default function ContactForm() {
             <div className="text-center py-12">
                 <CheckCircle className="w-16 h-16 text-green-500 mx-auto mb-4" />
                 <h3 className="text-2xl font-bold text-gray-800 mb-2">Message Sent!</h3>
-                <p className="text-gray-600 mb-6">
+                <p className="text-gray-600 mb-6 text-pretty">
                     Thank you for reaching out. We&apos;ll get back to you as soon as possible.
                 </p>
                 <button

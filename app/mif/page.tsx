@@ -43,7 +43,7 @@ export default function MIFPage() {
                             <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-error leading-tight mb-6">
                                 The Market Invasion Fund — Where Capital Becomes Intelligent.
                             </h2>
-                            <p className="text-gray-600 text-sm leading-relaxed mb-8">
+                            <p className="text-gray-600 text-sm leading-relaxed mb-8 text-pretty">
                                 The Market Invasion Fund (MIF) is a strategic capital engine that converts investment capital
                                 into replicable digital assets. Each SGD 300K block funds the creation of a Digital Al Business Engine by
                                 Digital PA, which lets ARK Trinity Investors gain valuation equity via ARK Trinity and secures their interest via
@@ -209,7 +209,7 @@ export default function MIFPage() {
                                 </div>
                                 <div className="bg-white rounded-lg p-5 md:mt-15 z-10 relative">
                                     <h3 className="text-lg font-bold text-black mb-1">2027</h3>
-                                    <p className="text-gray-500 text-sm">First portfolio units IPO-ready</p>
+                                    <p className="text-gray-500 text-sm text-pretty">First portfolio units IPO-ready</p>
                                 </div>
                             </div>
 
@@ -222,7 +222,7 @@ export default function MIFPage() {
                                 </div>
                                 <div className="bg-white rounded-lg p-5 md:mt-15 z-10 relative">
                                     <h3 className="text-lg font-bold text-black mb-1">2031</h3>
-                                    <p className="text-gray-500 text-sm">Institutional buyout</p>
+                                    <p className="text-gray-500 text-sm text-pretty">Institutional buyout</p>
                                 </div>
                             </div>
 
@@ -235,7 +235,7 @@ export default function MIFPage() {
                                 </div>
                                 <div className="bg-white rounded-lg p-5 md:mt-15 z-10 relative">
                                     <h3 className="text-lg font-bold text-black mb-1">2033</h3>
-                                    <p className="text-gray-500 text-sm">Global AI expansion</p>
+                                    <p className="text-gray-500 text-sm text-pretty">Global AI expansion</p>
                                 </div>
                             </div>
                         </div>

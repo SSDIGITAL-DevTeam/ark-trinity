@@ -103,7 +103,7 @@ const ModelSection = () => {
                             <h3 className="text-xl md:text-2xl font-bold text-black mb-4">
                                 {slides[activeSlide].title}
                             </h3>
-                            <p className="text-gray-700 text-base md:text-lg leading-relaxed">
+                            <p className="text-gray-700 text-base md:text-lg leading-relaxed text-pretty">
                                 {slides[activeSlide].description}
                             </p>
                         </div>

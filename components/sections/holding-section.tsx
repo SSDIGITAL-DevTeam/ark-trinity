@@ -52,7 +52,7 @@ const HoldingSection = () => {
                     <div className="absolute top-1/2 left-0 w-full h-1 border-t border-dashed border-blue-200 -translate-y-12 hidden md:block z-0 pointer-events-none opacity-50"></div>
                 </div>
 
-                <p className="text-[#333333] text-[14px] md:text-[16px] max-w-5xl mx-auto leading-relaxed text-center px-6 font-normal">
+                <p className="text-[#333333] text-[14px] md:text-[16px] max-w-5xl mx-auto leading-relaxed text-center px-6 font-normal text-pretty">
                     into a single scalable engine. Each USD 300K capital block builds an autonomous AI digital pod engineered to achieve $1M annual recurring revenue within 9–12 months. The Market Invasion Fund (MIF) is not a speculative venture — it is a structured, revenue-backed architecture designed to multiply intelligent digital assets across Southeast Asia.
                 </p>
             </div>

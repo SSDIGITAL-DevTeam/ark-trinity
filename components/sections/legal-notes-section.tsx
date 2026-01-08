@@ -27,7 +27,7 @@ const LegalNotesSection = () => {
                         <h2 className="text-3xl md:text-4xl font-bold text-white mb-5">
                             Legal Notes
                         </h2>
-                        <p className="text-gray-400 text-sm md:text-base leading-relaxed">
+                        <p className="text-gray-400 text-sm md:text-base leading-relaxed text-pretty">
                             All agreements governed by Singapore law and resolved under SIAC arbitration. Regional
                             feeders comply with local regulations but follow Master Fund arbitration for cross-border
                             matters. All projections are targets and may vary with market conditions.

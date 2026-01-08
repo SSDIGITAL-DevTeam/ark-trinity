@@ -28,7 +28,7 @@ export default function FoundingPage() {
                             <h2 className="text-3xl md:text-4xl font-bold text-error leading-tight mb-6">
                                 Three Minds. One<br />Architecture of Intelligence.
                             </h2>
-                            <p className="text-gray-600 text-sm leading-relaxed mb-8">
+                            <p className="text-gray-600 text-sm leading-relaxed mb-8 text-pretty">
                                 The three pillars of ARK Trinity are personified by its founders — each embodying a force of
                                 creation: Capital (Exponential), Digital (Execution), AI (Effortless).
                             </p>
@@ -43,7 +43,7 @@ export default function FoundingPage() {
                                 />
                             </div>
 
-                            <p className="text-black font-semibold text-lg leading-relaxed">
+                            <p className="text-black font-semibold text-lg leading-relaxed text-pretty">
                                 Capital multiplies, Digital executes, AI flows — together<br />
                                 they form the living Trinity of ARK.
                             </p>
@@ -56,7 +56,7 @@ export default function FoundingPage() {
                                         <span className="text-error">CKH</span>
                                         <span className="text-black"> — Capital Leverage & Multiplier</span>
                                     </h3>
-                                    <p className="text-gray-500 text-sm leading-relaxed">
+                                    <p className="text-gray-500 text-sm leading-relaxed text-pretty">
                                         Designs fund structure and financial frameworks
                                         aligning profit with purpose.
                                     </p>
@@ -78,7 +78,7 @@ export default function FoundingPage() {
                                         <span className="text-error">Robert</span>
                                         <span className="text-black"> — Digital Transformation & Backbone</span>
                                     </h3>
-                                    <p className="text-gray-500 text-sm leading-relaxed">
+                                    <p className="text-gray-500 text-sm leading-relaxed text-pretty">
                                         Builds regional operational backbones that
                                         scale with precision.
                                     </p>
@@ -100,7 +100,7 @@ export default function FoundingPage() {
                                         <span className="text-error">Austin</span>
                                         <span className="text-black"> — AI Integration & Automation</span>
                                     </h3>
-                                    <p className="text-gray-500 text-sm leading-relaxed">
+                                    <p className="text-gray-500 text-sm leading-relaxed text-pretty">
                                         Creates automation frameworks and intelligent
                                         pipelines powering each pod.
                                     </p>
@@ -122,7 +122,7 @@ export default function FoundingPage() {
                                         <span className="text-error">Lim How Teck</span>
                                         <span className="text-black"> — Board of Advisors</span>
                                     </h3>
-                                    <p className="text-gray-500 text-sm leading-relaxed">
+                                    <p className="text-gray-500 text-sm leading-relaxed text-pretty">
                                         Provides strategic guidance and expert insight to
                                         support each pod&apos;s growth.
                                     </p>
@@ -192,22 +192,22 @@ export default function FoundingPage() {
                             <div className="bg-white p-6 rounded-lg">
                                 <h3 className="text-2xl font-bold text-error mb-2">2023</h3>
                                 <h4 className="font-bold text-black mb-2">Spark</h4>
-                                <p className="text-gray-600 text-sm">Digital PA launched in Singapore</p>
+                                <p className="text-gray-600 text-sm text-pretty">Digital PA launched in Singapore</p>
                             </div>
                             <div className="bg-white p-6 rounded-lg">
                                 <h3 className="text-2xl font-bold text-error mb-2">2024</h3>
                                 <h4 className="font-bold text-black mb-2">Validation</h4>
-                                <p className="text-gray-600 text-sm">Regional expansion and profitability</p>
+                                <p className="text-gray-600 text-sm text-pretty">Regional expansion and profitability</p>
                             </div>
                             <div className="bg-white p-6 rounded-lg">
                                 <h3 className="text-2xl font-bold text-error mb-2">2025</h3>
                                 <h4 className="font-bold text-black mb-2">Formation</h4>
-                                <p className="text-gray-600 text-sm">ARK Trinity Holdings incorporated</p>
+                                <p className="text-gray-600 text-sm text-pretty">ARK Trinity Holdings incorporated</p>
                             </div>
                             <div className="bg-white p-6 rounded-lg">
                                 <h3 className="text-2xl font-bold text-error mb-2">2026</h3>
                                 <h4 className="font-bold text-black mb-2">MIF Phase</h4>
-                                <p className="text-gray-600 text-sm">1 begins under VCC</p>
+                                <p className="text-gray-600 text-sm text-pretty">1 begins under VCC</p>
                             </div>
                         </div>
 
@@ -215,17 +215,17 @@ export default function FoundingPage() {
                             <div className="bg-white p-6 rounded-lg">
                                 <h3 className="text-2xl font-bold text-error mb-2">2027</h3>
                                 <h4 className="font-bold text-black mb-2">Threshold</h4>
-                                <p className="text-gray-600 text-sm">$10M ARR portfolio + IPO readiness</p>
+                                <p className="text-gray-600 text-sm text-pretty">$10M ARR portfolio + IPO readiness</p>
                             </div>
                             <div className="bg-white p-6 rounded-lg">
                                 <h3 className="text-2xl font-bold text-error mb-2">2030</h3>
                                 <h4 className="font-bold text-black mb-2">Institutional Ascension</h4>
-                                <p className="text-gray-600 text-sm">Cross-ASEAN holding status</p>
+                                <p className="text-gray-600 text-sm text-pretty">Cross-ASEAN holding status</p>
                             </div>
                             <div className="bg-white p-6 rounded-lg">
                                 <h3 className="text-2xl font-bold text-error mb-2">2033</h3>
                                 <h4 className="font-bold text-black mb-2">Dynasty Era</h4>
-                                <p className="text-gray-600 text-sm">Global listing & legacy fund</p>
+                                <p className="text-gray-600 text-sm text-pretty">Global listing & legacy fund</p>
                             </div>
                         </div>
                     </div>
@@ -238,7 +238,7 @@ export default function FoundingPage() {
 
                         <div className="w-full md:w-1/2 flex flex-col justify-end relative z-10 pb-8 md:pb-0 mb-12">
                             <div className="bg-gray-100 rounded-lg p-5 md:p-6 relative inline-block">
-                                <p className="text-gray-600 leading-relaxed mb-3">
+                                <p className="text-gray-600 leading-relaxed mb-3 text-pretty">
                                     &quot;Our timeline is not a race — it&apos;s an architecture. Every milestone is a pillar, every year a layer.&quot;
                                 </p>
                                 <div className="font-bold text-black text-xl">

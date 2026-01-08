@@ -24,7 +24,7 @@ const PillarsSection = () => {
                         The Trinity That Builds Empires of Intelligence
                     </h2>
 
-                    <p className="text-[#333333] text-[16px] md:text-[18px] leading-relaxed mb-10 font-normal">
+                    <p className="text-[#333333] text-[16px] md:text-[18px] leading-relaxed mb-10 font-normal text-pretty">
                         Every ARK enterprise rests on three interlocking pillars — Digital, Capital, and AI — forming a self-reinforcing ecosystem where innovation, funding, and automation compound one another.
                     </p>
 

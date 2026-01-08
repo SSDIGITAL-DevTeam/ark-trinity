@@ -41,7 +41,7 @@ export default function AboutPage() {
                             <h2 className="text-3xl md:text-4xl lg:text-4xl font-bold text-error leading-tight mb-6">
                                 Founded with Vision. Built with Discipline. Driven by Destiny.
                             </h2>
-                            <p className="text-gray-600 text-sm md:text-base leading-relaxed">
+                            <p className="text-gray-600 text-sm md:text-base leading-relaxed text-pretty">
                                 ARK Trinity was born from a decade of building digital systems and studying wealth creation
                                 patterns across cultures. Founded on the belief that intelligence, when structured and disciplined,
                                 can outperform capital itself, the company merges AI, human systems, and conscious leadership
@@ -59,7 +59,7 @@ export default function AboutPage() {
 
                         <div className="w-full md:w-1/2 flex flex-col justify-end relative z-10 pb-8 md:pb-0 mb-12">
                             <div className="bg-gray-100 rounded-lg p-5 md:p-6 relative inline-block">
-                                <p className="text-gray-600 leading-relaxed mb-3">
+                                <p className="text-gray-600 leading-relaxed mb-3 text-pretty">
                                     &quot;I&apos;ve seen how capital chases technology and how technology outruns consciousness. ARK
                                     Trinity is my answer — a bridge between all three.&quot;
                                 </p>
@@ -110,7 +110,7 @@ export default function AboutPage() {
 
                             <div className="bg-white rounded-lg p-6 mb-4">
                                 <h3 className="font-bold text-black text-lg mb-2">Mission</h3>
-                                <p className="text-gray-600 text-sm leading-relaxed">
+                                <p className="text-gray-600 text-sm leading-relaxed text-pretty">
                                     To institutionalise intelligence — transforming AI innovation into profitable, purposeful, and
                                     permanent enterprises reshaping Southeast Asia.
                                 </p>
@@ -118,7 +118,7 @@ export default function AboutPage() {
 
                             <div className="bg-white rounded-lg p-6">
                                 <h3 className="font-bold text-black text-lg mb-2">Vision</h3>
-                                <p className="text-gray-600 text-sm leading-relaxed">
+                                <p className="text-gray-600 text-sm leading-relaxed text-pretty">
                                     By 2033, ARK Trinity becomes a global institution of intelligent capital — a network of AI-
                                     driven companies linked by shared data, shared value, and shared purpose.
                                 </p>
@@ -142,7 +142,7 @@ export default function AboutPage() {
                                         </div>
                                         <div className="flex-1 bg-error rounded-lg p-5 text-white">
                                             <div className="text-2xl font-bold mb-2">2023</div>
-                                            <p className="text-sm leading-relaxed opacity-90">
+                                            <p className="text-sm leading-relaxed opacity-90 text-pretty">
                                                 Digital PA proves automation can create self-scaling AI businesses.
                                             </p>
                                         </div>
@@ -156,7 +156,7 @@ export default function AboutPage() {
                                         </div>
                                         <div className="flex-1 bg-error rounded-lg p-5 text-white">
                                             <div className="text-2xl font-bold mb-2">2025</div>
-                                            <p className="text-sm leading-relaxed opacity-90">
+                                            <p className="text-sm leading-relaxed opacity-90 text-pretty">
                                                 ARK Trinity Holdings incorporated to unify Digital (Execution),
                                                 Capital (Expansion), and AI (Intelligence).
                                             </p>
@@ -171,7 +171,7 @@ export default function AboutPage() {
                                         </div>
                                         <div className="flex-1 bg-error rounded-lg p-5 text-white">
                                             <div className="text-2xl font-bold mb-2">2026</div>
-                                            <p className="text-sm leading-relaxed opacity-90">
+                                            <p className="text-sm leading-relaxed opacity-90 text-pretty">
                                                 Market Invasion Fund (MIF) launched under VCC master fund structure.
                                             </p>
                                         </div>
@@ -190,7 +190,7 @@ export default function AboutPage() {
                         <h2 className="text-3xl md:text-5xl font-bold text-black mb-4">
                             Core Values
                         </h2>
-                        <p className="text-gray-600 max-w-2xl mx-auto">
+                        <p className="text-gray-600 max-w-2xl mx-auto text-pretty">
                             The principles that guide our architecture of intelligent growth.
                         </p>
                     </div>
@@ -202,7 +202,7 @@ export default function AboutPage() {
                                 <div className="w-4 h-4 bg-error rounded-full" />
                             </div>
                             <h3 className="text-xl font-bold text-black mb-3">Discipline</h3>
-                            <p className="text-gray-600 text-sm leading-relaxed">
+                            <p className="text-gray-600 text-sm leading-relaxed text-pretty">
                                 Rigorous adherence to data-driven strategies and structural precision.
                             </p>
                         </div>
@@ -213,7 +213,7 @@ export default function AboutPage() {
                                 <div className="w-4 h-4 bg-error rounded-full" />
                             </div>
                             <h3 className="text-xl font-bold text-black mb-3">Integrity</h3>
-                            <p className="text-gray-600 text-sm leading-relaxed">
+                            <p className="text-gray-600 text-sm leading-relaxed text-pretty">
                                 Unwavering commitment to transparent, ethical, and sustainable value creation.
                             </p>
                         </div>
@@ -224,7 +224,7 @@ export default function AboutPage() {
                                 <div className="w-4 h-4 bg-error rounded-full" />
                             </div>
                             <h3 className="text-xl font-bold text-black mb-3">Consciousness</h3>
-                            <p className="text-gray-600 text-sm leading-relaxed">
+                            <p className="text-gray-600 text-sm leading-relaxed text-pretty">
                                 Awareness of our impact on society, economy, and the future of intelligence.
                             </p>
                         </div>
@@ -237,7 +237,7 @@ export default function AboutPage() {
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
 
                         <div>
-                            <p className="text-error text-sm mb-6">
+                            <p className="text-error text-sm mb-6 text-pretty">
                                 Digital builds revenue. Capital multiplies it. AI evolves it — this is how ARK Trinity turns
                                 technology into empire and empire into legacy.
                             </p>
@@ -246,7 +246,7 @@ export default function AboutPage() {
                                 Three Pillars. One Intelligent Engine. Infinite Scale.
                             </h2>
 
-                            <p className="text-black text-sm leading-relaxed">
+                            <p className="text-black text-sm leading-relaxed text-pretty">
                                 Digital PA creates revenue. ARK Capital amplifies scale. ARK AI Labs powers intelligence.
                                 Together they form a living architecture — an engine of growth that learns, evolves, and
                                 compounds across ASEAN.

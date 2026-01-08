@@ -23,7 +23,7 @@ export default function Hero() {
                         Turning USD 300K into $1M ARR AI Revenue Pods.
                     </h1>
 
-                    <p className="md:text-lg text-gray-300 max-w-4xl mb-10 leading-relaxed font-(family-name:--font-montserrat)">
+                    <p className="md:text-lg text-gray-300 max-w-4xl mb-10 leading-relaxed font-(family-name:--font-montserrat) text-pretty">
                         A new asset class where technology, automation, and capital converge — transforming every USD 300K block into a self-sustaining AI business unit, generating recurring revenue and equity growth toward
                     </p>
 

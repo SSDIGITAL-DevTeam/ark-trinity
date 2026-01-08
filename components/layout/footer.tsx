@@ -31,7 +31,7 @@ const Footer = () => {
                         <Link href="/" className="flex items-center">
                             <Logo variant="light" />
                         </Link>
-                        <p className="text-gray-800 font-semibold leading-relaxed">
+                        <p className="text-gray-800 font-semibold leading-relaxed text-pretty">
                             Join MIF — Turn 300K into $1M ARR AI Revenue Pods.
                         </p>
                     </div>
@@ -70,7 +70,7 @@ const Footer = () => {
                 </div>
             </div>
 
-            <p className="text-center text-gray-500 text-sm font-medium tracking-wide mb-20">
+            <p className="text-center text-gray-500 text-sm font-medium tracking-wide mb-20 text-pretty">
                 © 2026 ARK Trinity Holdings Pte. Ltd. | All Rights Reserved | Privacy & Governance Policy
             </p>
         </footer>

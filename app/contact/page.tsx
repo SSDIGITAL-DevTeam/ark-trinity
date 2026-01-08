@@ -29,7 +29,7 @@ export default function ContactPage() {
                             <h2 className="text-3xl md:text-5xl font-bold text-error mb-6">
                                 Enter the Ark.
                             </h2>
-                            <p className="text-gray-600 text-sm mb-8 leading-relaxed">
+                            <p className="text-gray-600 text-sm mb-8 leading-relaxed text-pretty">
                                 ARK Trinity engages only with those who share our values — intelligence,
                                 integrity, and intention.
                             </p>
@@ -67,7 +67,7 @@ export default function ContactPage() {
                                 </div>
                             </div>
 
-                            <p className="text-black font-semibold italic">
+                            <p className="text-black font-semibold italic text-pretty">
                                 “Every great empire begins with a conversation — let this
                                 be the first.” <span className="text-error not-italic font-bold"> — CKH</span>
                             </p>
