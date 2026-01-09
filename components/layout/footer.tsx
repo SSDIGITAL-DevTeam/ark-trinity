@@ -16,9 +16,9 @@ const Footer = () => {
     const contactInfo = [
         "Singapore (HQ) - One Marina Boulevard",
         "Jakarta (Hub) - ARK Indonesia Capital Partners",
-        "investors@arktrinity.com",
-        "partnership@arktrinity.com",
-        "media@arktrinity.com",
+        "investors@arktrinity.com.sg",
+        "partnership@arktrinity.com.sg",
+        "media@arktrinity.com.sg",
     ];
 
     return (

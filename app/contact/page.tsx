@@ -44,15 +44,15 @@ export default function ContactPage() {
                                 <div className="space-y-3">
                                     <div className="flex items-center gap-3 text-sm text-gray-700">
                                         <Mail className="w-4 h-4 text-error shrink-0" />
-                                        <span>investors@arktrinity.com</span>
+                                        <span>investors@arktrinity.com.sg</span>
                                     </div>
                                     <div className="flex items-center gap-3 text-sm text-gray-700">
                                         <Mail className="w-4 h-4 text-error shrink-0" />
-                                        <span>partnerships@arktrinity.com</span>
+                                        <span>partnerships@arktrinity.com.sg</span>
                                     </div>
                                     <div className="flex items-center gap-3 text-sm text-gray-700">
                                         <Mail className="w-4 h-4 text-error shrink-0" />
-                                        <span>media@arktrinity.com</span>
+                                        <span>media@arktrinity.com.sg</span>
                                     </div>
                                 </div>
                                 <div className="space-y-3">

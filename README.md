@@ -42,7 +42,7 @@ Make sure you have the following installed:
    **Key Variables:**
    - `NEXT_PUBLIC_BASE_URL`: The authoritative domain of the site (used for SEO/Sitemap). Defaults to `http://localhost:3000` locally.
      ```env
-     NEXT_PUBLIC_BASE_URL=https://arktrinity.com
+     NEXT_PUBLIC_BASE_URL=https://arktrinity.com.sg
      ```
 
 4. **Run Development Server:**
@@ -60,7 +60,7 @@ The easiest way to deploy this Next.js app is to use the [Vercel Platform](https
 1. Push your code to a Git repository (GitHub/GitLab/Bitbucket).
 2. Import the project into Vercel.
 3. In the "Configure Project" screen, add the Environment Variable:
-   - `NEXT_PUBLIC_BASE_URL`: Your production domain (e.g., `https://arktrinity.com`)
+   - `NEXT_PUBLIC_BASE_URL`: Your production domain (e.g., `https://arktrinity.com.sg`)
 4. Click **Deploy**. Vercel will automatically detect Next.js and build your site.
 
 ### Option 2: Docker (Self-Hosted)
@@ -87,11 +87,11 @@ For deploying on your own server (DigitalOcean, AWS, etc.), you can use the prov
 2. **Start the production server:**
    ```bash
    # Linux/Mac
-   export NEXT_PUBLIC_BASE_URL=https://arktrinity.com
+   export NEXT_PUBLIC_BASE_URL=https://arktrinity.com.sg
    npm start
    
    # Windows (PowerShell)
-   $env:NEXT_PUBLIC_BASE_URL="https://arktrinity.com"
+   $env:NEXT_PUBLIC_BASE_URL="https://arktrinity.com.sg"
    npm start
    ```
 
