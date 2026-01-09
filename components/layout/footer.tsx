@@ -8,8 +8,8 @@ const Footer = () => {
         { label: "Home", href: "/" },
         { label: "About", href: "/about" },
         { label: "MIF", href: "/mif" },
-        { label: "Founding", href: "/founding" },
-        { label: "Insight", href: "/insight" },
+        { label: "Founding", href: "/foundings" },
+        // { label: "Insight", href: "/insight" },
         { label: "Contact", href: "/contact" },
     ];
 
