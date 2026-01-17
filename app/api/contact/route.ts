@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import nodemailer from "nodemailer";
+import { TransactionalEmailsApi, SendSmtpEmail } from "@getbrevo/brevo";
 
 // In-memory rate limiting store
 const rateLimitStore = new Map<string, { count: number; resetTime: number }>();
@@ -52,7 +52,7 @@ interface ContactFormData {
 export async function POST(request: NextRequest) {
     try {
         const clientIP = getClientIP(request);
-        
+
         // Check rate limit
         const rateLimit = checkRateLimit(clientIP);
         if (!rateLimit.allowed) {
@@ -103,71 +103,63 @@ export async function POST(request: NextRequest) {
         }
 
         // Check environment variables
-        const smtpHost = process.env.SMTP_HOST;
-        const smtpPort = process.env.SMTP_PORT;
-        const smtpUser = process.env.SMTP_USER;
-        const smtpPassword = process.env.SMTP_PASSWORD;
+        const brevoApiKey = process.env.BREVO_API_KEY;
         const adminEmail = process.env.ADMIN_EMAIL;
+        const senderEmail = process.env.SENDER_EMAIL || "noreply@arktrinity.com.sg";
+        const senderName = process.env.SENDER_NAME || "ARK Trinity";
 
-        if (!smtpHost || !smtpPort || !smtpUser || !smtpPassword || !adminEmail) {
-            console.error("Missing SMTP configuration environment variables");
+        if (!brevoApiKey || !adminEmail) {
+            console.error("Missing Brevo configuration environment variables");
             return NextResponse.json(
                 { error: "Server configuration error. Please try again later." },
                 { status: 500 }
             );
         }
 
-        // Create transporter
-        const transporter = nodemailer.createTransport({
-            host: smtpHost,
-            port: parseInt(smtpPort, 10),
-            secure: false, // Use TLS
-            auth: {
-                user: smtpUser,
-                pass: smtpPassword,
-            },
-        });
+        // Initialize Brevo API
+        const emailAPI = new TransactionalEmailsApi();
+        emailAPI.setApiKey(0, brevoApiKey);
 
         // Format phone number
         const fullPhone = `${countryCode} ${phone}`;
 
-        // Send email
-        await transporter.sendMail({
-            from: `"ARK Trinity Contact Form" <${smtpUser}>`,
-            to: adminEmail,
-            replyTo: email,
-            subject: `New Contact Form Submission from ${name}`,
-            html: `
-                <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
-                    <h2 style="color: #dc2626; border-bottom: 2px solid #dc2626; padding-bottom: 10px;">
-                        New Contact Form Submission
-                    </h2>
-                    <table style="width: 100%; border-collapse: collapse; margin-top: 20px;">
-                        <tr>
-                            <td style="padding: 10px; border-bottom: 1px solid #eee; font-weight: bold; width: 120px;">Name:</td>
-                            <td style="padding: 10px; border-bottom: 1px solid #eee;">${name}</td>
-                        </tr>
-                        <tr>
-                            <td style="padding: 10px; border-bottom: 1px solid #eee; font-weight: bold;">Email:</td>
-                            <td style="padding: 10px; border-bottom: 1px solid #eee;">
-                                <a href="mailto:${email}" style="color: #dc2626;">${email}</a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td style="padding: 10px; border-bottom: 1px solid #eee; font-weight: bold;">Phone:</td>
-                            <td style="padding: 10px; border-bottom: 1px solid #eee;">${fullPhone}</td>
-                        </tr>
-                    </table>
-                    <div style="margin-top: 20px;">
-                        <h3 style="color: #333; margin-bottom: 10px;">Message:</h3>
-                        <div style="background: #f9f9f9; padding: 15px; border-radius: 5px; white-space: pre-wrap;">${message}</div>
-                    </div>
-                    <p style="margin-top: 30px; color: #666; font-size: 12px; border-top: 1px solid #eee; padding-top: 15px;">
-                        This email was sent from the ARK Trinity contact form.
-                    </p>
+        // Build email message
+        const sendSmtpEmail = new SendSmtpEmail();
+        sendSmtpEmail.subject = `New Contact Form Submission from ${name}`;
+        sendSmtpEmail.sender = { name: senderName, email: senderEmail };
+        sendSmtpEmail.to = [{ email: adminEmail, name: "Admin" }];
+        sendSmtpEmail.replyTo = { email: email, name: name };
+        sendSmtpEmail.htmlContent = `
+            <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
+                <h2 style="color: #dc2626; border-bottom: 2px solid #dc2626; padding-bottom: 10px;">
+                    New Contact Form Submission
+                </h2>
+                <table style="width: 100%; border-collapse: collapse; margin-top: 20px;">
+                    <tr>
+                        <td style="padding: 10px; border-bottom: 1px solid #eee; font-weight: bold; width: 120px;">Name:</td>
+                        <td style="padding: 10px; border-bottom: 1px solid #eee;">${name}</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px; border-bottom: 1px solid #eee; font-weight: bold;">Email:</td>
+                        <td style="padding: 10px; border-bottom: 1px solid #eee;">
+                            <a href="mailto:${email}" style="color: #dc2626;">${email}</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px; border-bottom: 1px solid #eee; font-weight: bold;">Phone:</td>
+                        <td style="padding: 10px; border-bottom: 1px solid #eee;">${fullPhone}</td>
+                    </tr>
+                </table>
+                <div style="margin-top: 20px;">
+                    <h3 style="color: #333; margin-bottom: 10px;">Message:</h3>
+                    <div style="background: #f9f9f9; padding: 15px; border-radius: 5px; white-space: pre-wrap;">${message}</div>
                 </div>
-            `,
-            text: `
+                <p style="margin-top: 30px; color: #666; font-size: 12px; border-top: 1px solid #eee; padding-top: 15px;">
+                    This email was sent from the ARK Trinity contact form.
+                </p>
+            </div>
+        `;
+        sendSmtpEmail.textContent = `
 New Contact Form Submission
 
 Name: ${name}
@@ -179,8 +171,10 @@ ${message}
 
 ---
 This email was sent from the ARK Trinity contact form.
-            `,
-        });
+        `;
+
+        // Send the email via Brevo
+        await emailAPI.sendTransacEmail(sendSmtpEmail);
 
         return NextResponse.json({ success: true });
     } catch (error) {
