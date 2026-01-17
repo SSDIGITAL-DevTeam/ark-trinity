@@ -28,10 +28,17 @@ const LegalNotesSection = () => {
                         <h2 className="text-3xl md:text-4xl font-bold text-white mb-5">
                             Legal Notes
                         </h2>
+                        <p className="text-gray-400 text-sm md:text-base leading-relaxed text-pretty mb-4">
+                            ARK Trinity is a private holding and operating institution and is not a licensed fund manager
+                            or regulated financial institution under the Monetary Authority of Singapore (MAS).
+                        </p>
+                        <p className="text-gray-400 text-sm md:text-base leading-relaxed text-pretty mb-4">
+                            Any participation or capital alignment is conducted on a private, selective, and non-public
+                            basis through bespoke contractual arrangements.
+                        </p>
                         <p className="text-gray-400 text-sm md:text-base leading-relaxed text-pretty">
-                            All agreements governed by Singapore law and resolved under SIAC arbitration. Regional
-                            feeders comply with local regulations but follow Master Fund arbitration for cross-border
-                            matters. All projections are targets and may vary with market conditions.
+                            All agreements are governed by Singapore law, with disputes resolved by arbitration in
+                            Singapore. Any references to targets or future plans are indicative only and subject to change.
                         </p>
                     </div>
 

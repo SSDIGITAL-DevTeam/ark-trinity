@@ -19,12 +19,12 @@ export default function Hero() {
             <div className="relative z-10 container mx-auto px-6 md:px-12 lg:px-16 flex flex-col justify-center h-full pt-20">
                 <div className="max-w-4xl">
                     <h1 className="text-2xl md:text-5xl font-bold text-white leading-10 md:leading-18 mb-6">
-                        Join the Market Invasion Fund (MIF) — <br className="hidden md:inline-block" />
-                        Turning USD 300K into $1M ARR AI Revenue Pods.
+                        The Market Invasion Fund (MIF) — <br className="hidden md:inline-block" />
+                        Making Every $300K Investment into $1M ARR AI Revenue Pods
                     </h1>
 
                     <p className="md:text-lg text-gray-300 max-w-4xl mb-10 leading-relaxed font-(family-name:--font-montserrat) text-pretty">
-                        A new asset class where technology, automation, and capital converge — transforming every USD 300K block into a self-sustaining AI business unit, generating recurring revenue and equity growth toward
+                        ARK Trinity is an AI-native holding institution that uses digital transformation and automation to multiply revenue, customers, and values across scalable businesses.
                     </p>
 
                     <Link

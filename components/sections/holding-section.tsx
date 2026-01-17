@@ -19,7 +19,7 @@ const HoldingSection = () => {
                             </svg>
 
                         </div>
-                        <h3 className="text-[22px] font-bold text-black tracking-tight">Uniting Automation</h3>
+                        <h3 className="text-[22px] font-bold text-black tracking-tight">AI Automation</h3>
                     </div>
 
                     {/* Card 2: Digital Transformation */}
@@ -45,7 +45,7 @@ const HoldingSection = () => {
                             </svg>
 
                         </div>
-                        <h3 className="text-[22px] font-bold text-black tracking-tight">Capital Discipline</h3>
+                        <h3 className="text-[22px] font-bold text-black tracking-tight">Capital Multiplier</h3>
                     </div>
 
                     {/* Subtle connecting line in background (optional decoration to match image blue line) */}

@@ -10,16 +10,16 @@ interface SlideData {
 
 const slides: SlideData[] = [
     {
-        title: "The Growth Engine:",
-        description: "machines through Digital PA. Predictable MRR + scalable operations + replicable data-driven models.",
+        title: "ARK Capital Multiplier Model:",
+        description: "Capital is deployed only where demand already exists — to scale proven revenue and customers, not to discover them",
     },
     {
-        title: "ARK Capital Model:",
-        description: "Capital discipline through structured revenue-backed architecture to multiply intelligent digital assets across Southeast Asia.",
+        title: "ARK AI Automation Model:",
+        description: "AI automates execution, removes human bottlenecks, and continuously improves effectiveness as scale of the business increases.",
     },
     {
-        title: "ARK AI Labs Model:",
-        description: "Each USD 300K capital block builds an autonomous AI digital pod engineered to achieve $1M annual recurring revenue.",
+        title: "ARK Digital Transformation Model:",
+        description: "Digital transformation connects every business function — sales, marketing, operations, finance — into a single execution and performance system.",
     },
 ];
 
@@ -133,7 +133,7 @@ const ModelSection = () => {
                             {/* ARK Digital - Top Left, rotated -60deg pointing up-right */}
                             <TrinityArrow
                                 isActive={activeSlide === 0}
-                                label="ARK Digital"
+                                label="ARK Capital"
                                 onClick={() => setActiveSlide(0)}
                                 flipped={true}
                                 className="bottom-40 left-12 absolute"
@@ -146,7 +146,7 @@ const ModelSection = () => {
                             {/* ARK Capital - Right side, rotated 60deg pointing down-right */}
                             <TrinityArrow
                                 isActive={activeSlide === 1}
-                                label="ARK Capital"
+                                label="ARK AI Labs"
                                 onClick={() => setActiveSlide(1)}
                                 flipped={true}
                                 className="bottom-8 -right-30 md:-right-16 absolute"
@@ -159,7 +159,7 @@ const ModelSection = () => {
                             {/* ARK AI Labs - Bottom, horizontal (0deg) */}
                             <TrinityArrow
                                 isActive={activeSlide === 2}
-                                label="ARK AI Labs"
+                                label="ARK Digital"
                                 onClick={() => setActiveSlide(2)}
                                 className="bottom-3 left-12 absolute"
                                 style={{

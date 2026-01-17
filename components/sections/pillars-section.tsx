@@ -26,11 +26,11 @@ const PillarsSection = () => {
                     </h2>
 
                     <p className="text-[#333333] text-[16px] md:text-[18px] leading-relaxed mb-10 font-normal text-pretty">
-                        Every ARK enterprise rests on three interlocking pillars — Digital, Capital, and AI — forming a self-reinforcing ecosystem where innovation, funding, and automation compound one another.
+                        ARK Trinity is built to become a publicly listed AI holding institution, owning a portfolio of cash-generating, AI-enabled operating businesses across Southeast Asia & Asia Pacific.
                     </p>
 
-                    <Link href="/about" className="btn btn-lg btn-error text-white border-none rounded-full px-12 h-[60px] text-lg font-bold transition-all duration-300 transform hover:scale-105 shadow-lg">
-                        Learn More
+                    <Link href="/contact" className="btn btn-lg btn-error text-white border-none rounded-full px-12 h-[60px] text-lg font-bold transition-all duration-300 transform hover:scale-105 shadow-lg">
+                        Join the Market Invasion Fund
                     </Link>
                 </div>
             </div>
