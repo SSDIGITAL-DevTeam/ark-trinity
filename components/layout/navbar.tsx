@@ -15,6 +15,7 @@ export default function Navbar() {
     const menus: MenuItem[] = [
         { label: "Home", href: "/" },
         { label: "About", href: "/about" },
+        { label: "Market Potential", href: "/market-potential" },
         { label: "MIF", href: "/mif" },
         { label: "Founding", href: "/foundings" },
     ];
@@ -56,27 +57,27 @@ export default function Navbar() {
 
     return (
         <div className="bg-black sticky top-0 z-50">
-            <div className="navbar text-white shadow-sm container mx-auto px-6 md:px-12 lg:px-16 py-4 lg:grid lg:grid-cols-3">
-                <div className="relative flex lg:justify-start flex-1 lg:flex-none items-center">
-                    <label htmlFor="main-drawer" className="btn btn-ghost lg:hidden mr-2 z-20">
+            <div className="navbar text-white shadow-sm container mx-auto px-6 md:px-12 lg:px-16 py-4 xl:grid xl:grid-cols-3">
+                <div className="relative flex xl:justify-start flex-1 xl:flex-none items-center">
+                    <label htmlFor="main-drawer" className="btn btn-ghost xl:hidden mr-2 z-20">
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" />
                         </svg>
                     </label>
-                    <div className="lg:static absolute left-1/2 -translate-x-1/2 lg:translate-x-0 z-10 flex justify-center">
+                    <div className="xl:static absolute left-1/2 -translate-x-1/2 xl:translate-x-0 z-10 flex justify-center">
                         <Link href="/">
                             <Logo />
                         </Link>
                     </div>
                 </div>
 
-                <div className="hidden lg:flex justify-center">
-                    <ul className="menu menu-horizontal px-1 gap-2">
+                <div className="hidden xl:flex justify-center">
+                    <ul className="menu menu-horizontal px-1 gap-2 flex-nowrap">
                         {renderMenuItems(menus, false)}
                     </ul>
                 </div>
 
-                <div className="hidden lg:flex justify-end">
+                <div className="hidden xl:flex justify-end">
                     <Link
                         href="/contact"
                         className={`btn rounded-3xl btn-error text-white ${pathname === '/contact' ? 'brightness-110' : ''}`}

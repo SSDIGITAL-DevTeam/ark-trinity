@@ -22,7 +22,7 @@ const PillarsSection = () => {
                 {/* Right Side: Content */}
                 <div className="w-full md:w-1/2 text-left">
                     <h2 className="text-4xl font-bold text-[#FF4D4D] leading-tight mb-8">
-                        The Trinity That Builds Empires of Intelligence
+                        VISION
                     </h2>
 
                     <p className="text-[#333333] text-[16px] md:text-[18px] leading-relaxed mb-10 font-normal text-pretty">

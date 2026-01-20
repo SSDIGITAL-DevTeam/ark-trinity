@@ -8,14 +8,13 @@ const Footer = () => {
         { label: "Home", href: "/" },
         { label: "About", href: "/about" },
         { label: "MIF", href: "/mif" },
-        { label: "Founding", href: "/foundings" },
+        { label: "Board", href: "/foundings" },
         // { label: "Insight", href: "/insight" },
         { label: "Contact", href: "/contact" },
     ];
 
     const contactInfo = [
         "Singapore (HQ) - One Marina Boulevard",
-        "Jakarta (Hub) - ARK Indonesia Capital Partners",
         "investors@arktrinity.com.sg",
         "partnership@arktrinity.com.sg",
         "media@arktrinity.com.sg",
@@ -32,7 +31,7 @@ const Footer = () => {
                             <Logo variant="light" />
                         </Link>
                         <p className="text-gray-800 font-semibold leading-relaxed text-pretty">
-                            Join MIF — Turn 300K into $1M ARR AI Revenue Pods.
+                            Market Invasion Fund<sup>TM</sup> (MIF) — Making Every $300K Investment into $1M ARR AI Revenue Pods
                         </p>
                     </div>
 
@@ -70,8 +69,13 @@ const Footer = () => {
                 </div>
             </div>
 
-            <p className="text-center text-gray-500 text-sm font-medium tracking-wide mb-20 text-pretty">
-                © 2026 ARK Trinity Holdings Pte. Ltd. | All Rights Reserved | Privacy & Governance Policy
+            <p className="text-center text-gray-800 font-bold tracking-wide mb-3 text-pretty">
+                Legal Notice | All Rights Reserved 2026
+            </p>
+            <p className="text-center text-gray-500 text-sm font-medium tracking-wide mb-20 text-pretty max-w-[600px] mx-auto">
+                ARK Trinity is a private holding and operating institution and is not a licensed fund manager
+                or regulated financial institution under MAS. All participation is private and non-public.
+                Agreements are governed by Singapore law. Forward-looking statements are indicative only.
             </p>
         </footer>
     );

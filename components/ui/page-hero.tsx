@@ -2,16 +2,37 @@ import Image from "next/image";
 
 interface PageHeroProps {
     title: string;
+    subtitle?: string;
     image?: string;
     alt?: string;
 }
 
-export default function PageHero({ title, image, alt }: PageHeroProps) {
+export default function PageHero({ title, subtitle, image, alt }: PageHeroProps) {
     return (
         <section className="relative bg-[#121212] py-30 md:py-52 overflow-hidden">
-            <div className="absolute inset-y-0 left-0 w-1/2 bg-linear-to-r from-red-900/60 via-red-800/30 to-transparent pointer-events-none" />
+            {/* Left radial gradient - smooth circular */}
+            <div
+                className="absolute -left-1/4 top-1/2 -translate-y-1/2 w-[80%] h-[150%] pointer-events-none"
+                style={{
+                    background: "radial-gradient(ellipse at center, rgba(153, 27, 27, 0.6) 0%, rgba(127, 29, 29, 0.3) 40%, transparent 70%)"
+                }}
+            />
 
-            <div className="absolute bottom-0 left-0 w-1/3 h-1/2 bg-linear-to-tr from-red-700/40 via-red-600/20 to-transparent pointer-events-none" />
+            {/* Bottom-left radial gradient */}
+            <div
+                className="absolute -left-1/4 -bottom-1/4 w-[60%] h-[80%] pointer-events-none"
+                style={{
+                    background: "radial-gradient(ellipse at center, rgba(185, 28, 28, 0.4) 0%, rgba(153, 27, 27, 0.2) 40%, transparent 70%)"
+                }}
+            />
+
+            {/* Top-right radial gradient - smooth circular */}
+            <div
+                className="absolute -right-1/4 -top-1/4 w-[60%] h-[80%] pointer-events-none"
+                style={{
+                    background: "radial-gradient(ellipse at center, rgba(153, 27, 27, 0.5) 0%, rgba(127, 29, 29, 0.25) 40%, transparent 70%)"
+                }}
+            />
 
             {image && (
                 <div className="absolute right-0 top-0 h-full w-full opacity-50 pointer-events-none">
@@ -31,6 +52,11 @@ export default function PageHero({ title, image, alt }: PageHeroProps) {
                 <h1 className="text-4xl md:text-6xl font-bold text-white tracking-tight">
                     {title}
                 </h1>
+                {subtitle && (
+                    <p className="mt-4 text-base md:text-lg text-gray-300 max-w-3xl mx-auto">
+                        {subtitle}
+                    </p>
+                )}
             </div>
         </section>
     );

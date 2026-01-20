@@ -241,7 +241,7 @@ export default function FoundingPage() {
             </section>
 
             <section className="bg-white pt-12 md:pt-16 overflow-hidden">
-                <div className="container mx-auto px-6 md:px-12 lg:px-16">
+                <div className="container mx-auto px-6 md:px-12 lg:px-16 -mb-12">
                     <div className="relative flex flex-col md:flex-row items-center">
 
                         <div className="w-full md:w-1/2 flex flex-col justify-end relative z-10 pb-8 md:pb-0 mb-12">
