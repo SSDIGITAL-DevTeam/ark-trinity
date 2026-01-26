@@ -26,7 +26,7 @@ const PillarsSection = () => {
                     </h2>
 
                     <p className="text-[#333333] text-[16px] md:text-[18px] leading-relaxed mb-10 font-normal text-pretty">
-                        ARK Trinity is built to become a publicly listed AI holding institution, owning a portfolio of cash-generating, AI-enabled operating businesses across Southeast Asia & Asia Pacific.
+                        ARK Trinity is built to become a <b>publicly listed AI holding institution</b>, owning a portfolio of cash-generating, AI-enabled operating businesses across Southeast Asia & Asia Pacific.
                     </p>
 
                     <Link href="/contact" className="btn btn-lg btn-error text-white border-none rounded-full px-12 h-[60px] text-lg font-bold transition-all duration-300 transform hover:scale-105 shadow-lg">

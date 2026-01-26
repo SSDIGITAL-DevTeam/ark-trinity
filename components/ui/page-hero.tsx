@@ -1,8 +1,9 @@
+import { ReactNode } from "react";
 import Image from "next/image";
 
 interface PageHeroProps {
     title: string;
-    subtitle?: string;
+    subtitle?: string | ReactNode;
     image?: string;
     alt?: string;
 }

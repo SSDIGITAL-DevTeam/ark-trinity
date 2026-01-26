@@ -4,16 +4,16 @@ import PageHero from "@/components/ui/page-hero";
 import MarketGrowthChart from "@/components/charts/market-growth-chart";
 
 export const metadata: Metadata = {
-    title: "Market Potential",
+    title: "Total Addressable Market (TAM)",
     description: "Structural demand driving the next decade of enterprise transformation.",
     openGraph: {
-        title: "Market Potential | ARK Trinity",
+        title: "Total Addressable Market (TAM) | ARK Trinity",
         description: "Structural demand driving the next decade of enterprise transformation.",
         images: ["/images/homepage/modern_asian_skyscraper_hd.png"],
     },
     twitter: {
         card: "summary_large_image",
-        title: "Market Potential | ARK Trinity",
+        title: "Total Addressable Market (TAM) | ARK Trinity",
         description: "Structural demand driving the next decade of enterprise transformation.",
         images: ["/images/homepage/modern_asian_skyscraper_hd.png"],
     },
@@ -23,8 +23,7 @@ export default function MarketPotentialPage() {
     return (
         <main>
             <PageHero
-                title="MARKET POTENTIAL"
-                subtitle="Structural demand driving the next decade of enterprise transformation"
+                title="TOTAL ADDRESSABLE MARKET (TAM)"
                 image="/images/market-potential/page-header.png"
             />
 
@@ -88,40 +87,22 @@ export default function MarketPotentialPage() {
                 </div>
             </section>
 
-            {/* ASEAN Opportunity Section */}
-            <section className="bg-[#F5F5F5] py-16 md:py-24">
+            {/* Data Security & Infrastructure Section */}
+            <section className="bg-white py-16 md:py-24">
                 <div className="container mx-auto px-6 md:px-12 lg:px-16">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-center">
                         {/* Image */}
-                        <div className="relative">
+                        <div className="relative order-2 md:order-1">
                             <div className="relative rounded-lg overflow-hidden shadow-lg">
                                 <Image
-                                    src="/images/market-potential/section-3.png"
-                                    alt="ASEAN Opportunity - Growth chart over Southeast Asia"
+                                    src="/images/market-potential/section-4.png"
+                                    alt="Data Security & Infrastructure - Cyber security concept"
                                     width={800}
                                     height={560}
                                     className="w-full h-auto object-cover"
                                 />
                             </div>
                         </div>
-
-                        {/* Content */}
-                        <div>
-                            <h2 className="text-3xl md:text-4xl font-bold text-error mb-6">
-                                ASEAN Opportunity
-                            </h2>
-                            <p className="text-gray-700 text-base md:text-lg leading-relaxed text-pretty">
-                                Southeast Asia represents one of the fastest-digitising yet under-automated regions, with DX spending expanding from <strong className="text-black">~US$102B</strong> toward <strong className="text-black">~US$295B by 2030</strong>.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            {/* Data Security & Infrastructure Section */}
-            <section className="bg-white py-16 md:py-24">
-                <div className="container mx-auto px-6 md:px-12 lg:px-16">
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-center">
                         {/* Content */}
                         <div className="order-2 md:order-1">
                             <h2 className="text-3xl md:text-4xl font-bold text-error mb-6">
@@ -131,13 +112,29 @@ export default function MarketPotentialPage() {
                                 As automation scales, data security becomes foundational, expanding alongside digital and AI adoption across regulated and cross-border operations.
                             </p>
                         </div>
+                    </div>
+                </div>
+            </section>
 
+            {/* ASEAN Opportunity Section */}
+            <section className="bg-[#F5F5F5] py-16 md:py-24">
+                <div className="container mx-auto px-6 md:px-12 lg:px-16">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-center">
+                        {/* Content */}
+                        <div className="order-2 md:order-1">
+                            <h2 className="text-3xl md:text-4xl font-bold text-error mb-6">
+                                Asia-Pacific Opportunity
+                            </h2>
+                            <p className="text-gray-700 text-base md:text-lg leading-relaxed text-pretty">
+                                Southeast Asia represents one of the fastest-digitising yet under-automated regions, with DX spending expanding from <strong className="text-black">~US$102B</strong> toward <strong className="text-black">~US$295B by 2030</strong>.
+                            </p>
+                        </div>
                         {/* Image */}
                         <div className="relative order-1 md:order-2">
                             <div className="relative rounded-lg overflow-hidden shadow-lg">
                                 <Image
-                                    src="/images/market-potential/section-4.png"
-                                    alt="Data Security & Infrastructure - Cyber security concept"
+                                    src="/images/market-potential/section-3.png"
+                                    alt="Asia-Pacific Opportunity - Growth chart over Southeast Asia"
                                     width={800}
                                     height={560}
                                     className="w-full h-auto object-cover"
@@ -183,10 +180,10 @@ export default function MarketPotentialPage() {
                     {/* Section Header */}
                     <div className="text-center mb-16">
                         <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-error mb-4">
-                            WHY NOW
+                            The Inflection Point
                         </h2>
                         <p className="text-gray-600 text-base md:text-lg">
-                            The inflection point between spending and execution
+                            between spending and execution
                         </p>
                     </div>
 

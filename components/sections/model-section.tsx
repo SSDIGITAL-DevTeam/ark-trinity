@@ -146,7 +146,7 @@ const ModelSection = () => {
                             {/* ARK Capital - Right side, rotated 60deg pointing down-right */}
                             <TrinityArrow
                                 isActive={activeSlide === 1}
-                                label="ARK AI Labs"
+                                label="ARK AI"
                                 onClick={() => setActiveSlide(1)}
                                 flipped={true}
                                 className="bottom-8 -right-30 md:-right-16 absolute"

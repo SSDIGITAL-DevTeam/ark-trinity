@@ -15,9 +15,9 @@ export default function Navbar() {
     const menus: MenuItem[] = [
         { label: "Home", href: "/" },
         { label: "About", href: "/about" },
-        { label: "Market Potential", href: "/market-potential" },
+        { label: "TAM", href: "/market-potential" },
         { label: "MIF", href: "/mif" },
-        { label: "Founding", href: "/foundings" },
+        { label: "Board", href: "/foundings" },
     ];
 
     const renderMenuItems = (items: MenuItem[], isMobile: boolean) => {
@@ -57,33 +57,50 @@ export default function Navbar() {
 
     return (
         <div className="bg-black sticky top-0 z-50">
-            <div className="navbar text-white shadow-sm container mx-auto px-6 md:px-12 lg:px-16 py-4 xl:grid xl:grid-cols-3">
-                <div className="relative flex xl:justify-start flex-1 xl:flex-none items-center">
-                    <label htmlFor="main-drawer" className="btn btn-ghost xl:hidden mr-2 z-20">
-                        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <div className="navbar text-white shadow-sm container mx-auto px-4 sm:px-6 md:px-12 lg:px-16 py-3 md:py-4">
+                {/* Mobile Layout */}
+                <div className="flex xl:hidden w-full items-center justify-between">
+                    {/* Hamburger Menu - Left */}
+                    <label htmlFor="main-drawer" className="btn btn-ghost btn-sm p-0 min-h-0 h-auto">
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" />
                         </svg>
                     </label>
-                    <div className="xl:static absolute left-1/2 -translate-x-1/2 xl:translate-x-0 z-10 flex justify-center">
+
+                    {/* Logo - Center */}
+                    <Link href="/" className="flex-shrink-0">
+                        <Logo />
+                    </Link>
+
+                    {/* Spacer for balance - Right */}
+                    <div className="w-6"></div>
+                </div>
+
+                {/* Desktop Layout */}
+                <div className="hidden xl:grid xl:grid-cols-3 w-full items-center">
+                    {/* Logo - Left */}
+                    <div className="flex justify-start">
                         <Link href="/">
                             <Logo />
                         </Link>
                     </div>
-                </div>
 
-                <div className="hidden xl:flex justify-center">
-                    <ul className="menu menu-horizontal px-1 gap-2 flex-nowrap">
-                        {renderMenuItems(menus, false)}
-                    </ul>
-                </div>
+                    {/* Menu - Center */}
+                    <div className="flex justify-center">
+                        <ul className="menu menu-horizontal px-1 gap-1 flex-nowrap">
+                            {renderMenuItems(menus, false)}
+                        </ul>
+                    </div>
 
-                <div className="hidden xl:flex justify-end">
-                    <Link
-                        href="/contact"
-                        className={`btn rounded-3xl btn-error text-white ${pathname === '/contact' ? 'brightness-110' : ''}`}
-                    >
-                        Contact Us
-                    </Link>
+                    {/* CTA Button - Right */}
+                    <div className="flex justify-end">
+                        <Link
+                            href="/contact"
+                            className={`btn rounded-3xl btn-error text-white ${pathname === '/contact' ? 'brightness-110' : ''}`}
+                        >
+                            Contact Us
+                        </Link>
+                    </div>
                 </div>
             </div>
         </div>

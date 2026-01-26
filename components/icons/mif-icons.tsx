@@ -13,9 +13,8 @@ export function DollarIcon({ className }: { className?: string }) {
 
 export function AISystemIcon({ className }: { className?: string }) {
     return (
-        <svg className={className} viewBox="0 0 51 51" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M25.5 32.5C29.366 32.5 32.5 29.366 32.5 25.5C32.5 21.634 29.366 18.5 25.5 18.5C21.634 18.5 18.5 21.634 18.5 25.5C18.5 29.366 21.634 32.5 25.5 32.5Z" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
-            <path d="M25.5 1.5V7.5M25.5 43.5V49.5M1.5 25.5H7.5M43.5 25.5H49.5M8.5 8.5L12.5 12.5M38.5 38.5L42.5 42.5M42.5 8.5L38.5 12.5M12.5 38.5L8.5 42.5" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className={className}>
+            <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 3v11.25A2.25 2.25 0 0 0 6 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0 1 18 16.5h-2.25m-7.5 0h7.5m-7.5 0-1 3m8.5-3 1 3m0 0 .5 1.5m-.5-1.5h-9.5m0 0-.5 1.5m.75-9 3-3 2.148 2.148A12.061 12.061 0 0 1 16.5 7.605" />
         </svg>
     );
 }

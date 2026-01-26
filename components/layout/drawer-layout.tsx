@@ -44,9 +44,9 @@ export default function DrawerLayout({ children }: DrawerLayoutProps) {
                     {[
                         { label: "Home", href: "/" },
                         { label: "About", href: "/about" },
-                        { label: "Market Potential", href: "/market-potential" },
+                        { label: "TAM", href: "/market-potential" },
                         { label: "MIF", href: "/mif" },
-                        { label: "Founding", href: "/foundings" },
+                        { label: "Board", href: "/foundings" },
                     ].map((item) => (
                         <li key={item.href}>
                             <Link
