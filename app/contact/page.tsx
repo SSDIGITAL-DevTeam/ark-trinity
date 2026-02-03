@@ -64,7 +64,7 @@ export default function ContactPage() {
                       <span>One Marina Boulevard</span>
                     </div>
                   </div>
-                  <div className="flex items-start gap-3 text-sm text-gray-700">
+                  <div className="items-start gap-3 text-sm text-gray-700 hidden">
                     <Building2 className="w-4 h-4 text-error shrink-0 mt-0.5" />
                     <div>
                       <span className="font-bold text-error block">
