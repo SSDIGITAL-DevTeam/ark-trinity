@@ -5,6 +5,8 @@ import "./globals.css";
 import DrawerLayout from "@/components/layout/drawer-layout";
 import ProgressBar from "@/components/ui/progress-bar";
 
+import ComingSoonOverlay from "@/components/ComingSoonOverlay";
+
 const plusJakartaSans = Plus_Jakarta_Sans({
   variable: "--font-plus-jakarta-sans",
   subsets: ["latin"],
@@ -71,6 +73,7 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const isComingSoon = process.env.NEXT_PUBLIC_COMING_SOON === "true";
   return (
     <html lang="en">
       <head>
@@ -79,10 +82,16 @@ export default function RootLayout({
       <body
         className={`${plusJakartaSans.variable} ${montserrat.variable} antialiased`}
       >
-        <Suspense fallback={null}>
-          <ProgressBar />
-        </Suspense>
-        <DrawerLayout>{children}</DrawerLayout>
+        {isComingSoon ? (
+          <ComingSoonOverlay />
+        ) : (
+          <>
+            <Suspense fallback={null}>
+              <ProgressBar />
+            </Suspense>
+            <DrawerLayout>{children}</DrawerLayout>
+          </>
+        )}
       </body>
     </html>
   );
