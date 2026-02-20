@@ -28,24 +28,25 @@ export default function Hero() {
       {/* Content */}
       <div className="relative z-10 container mx-auto px-6 md:px-12 lg:px-16 flex flex-col justify-center h-full pt-20">
         <div className="max-w-4xl">
-          <h1 className="text-2xl md:text-5xl font-bold text-white leading-10 md:leading-18 mb-6">
-            Market Invasion Fund (MIF) —{" "}
+          <h1 className="text-2xl md:text-5xl font-bold text-white leading-10 md:leading-14 mb-6">
+            ARK Trinity —{" "}
             <br className="hidden md:inline-block" />
-            Making Every $300K Investment into $1M ARR AI Revenue Pods
+            AI-Native Venture Development Platform
           </h1>
 
           <p className="md:text-lg text-gray-300 max-w-4xl mb-10 leading-relaxed font-(family-name:--font-montserrat) text-pretty">
-            ARK Trinity is an AI-native holding institution that uses digital
-            transformation and automation to multiply revenue, customers, and
-            values across scalable businesses.
+            Building scalable AI-enabled operating ventures across Southeast Asia and Asia Pacific.<br/><br/>ARK Trinity is a private strategic initiative focused on designing, building, and operating ARK Trinity is a private strategic initiative focused on designing, building, and operating
           </p>
 
           <Link
             href="/contact"
             className="btn md:btn-lg md:px-10 md:py-8 rounded-full bg-white text-black border-none hover:bg-gray-100"
           >
-            Join the Market Invasion Fund
+            Request Private Briefing
           </Link>
+          <p className="md:text-sm text-xs md:pl-6 text-gray-300 max-w-4xl mt-2 leading-relaxed font-(family-name:--font-montserrat) text-pretty">
+            (For qualified stakeholders only)
+          </p>
         </div>
       </div>
     </div>
