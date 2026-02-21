@@ -338,7 +338,7 @@ export default function MIFPage() {
               href="/contact"
               className="btn btn-error text-white rounded-full px-8"
             >
-              Join the Market Invasion Fund
+              Request Strategic Engagement
             </Link>
           </div>
         </div>

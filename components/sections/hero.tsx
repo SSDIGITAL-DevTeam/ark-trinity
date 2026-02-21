@@ -29,13 +29,19 @@ export default function Hero() {
       <div className="relative z-10 container mx-auto px-6 md:px-12 lg:px-16 flex flex-col justify-center h-full pt-20">
         <div className="max-w-4xl">
           <h1 className="text-2xl md:text-5xl font-bold text-white leading-10 md:leading-14 mb-6">
-            ARK Trinity —{" "}
+            ARK Trinity
             <br className="hidden md:inline-block" />
-            AI-Native Venture Development Platform
+            AI-Native Venture Development Platform —
           </h1>
 
+          <h2 className="md:text-xl text-gray-300 max-w-4xl font-semibold mb-10 leading-relaxed font-(family-name:--font-montserrat) text-pretty">
+            Building scalable AI-enabled operating ventures across Southeast
+            Asia and Asia Pacific.
+          </h2>
           <p className="md:text-lg text-gray-300 max-w-4xl mb-10 leading-relaxed font-(family-name:--font-montserrat) text-pretty">
-            Building scalable AI-enabled operating ventures across Southeast Asia and Asia Pacific.<br/><br/>ARK Trinity is a private strategic initiative focused on designing, building, and operating ARK Trinity is a private strategic initiative focused on designing, building, and operating
+            ARK Trinity is a private strategic initiative focused on designing,
+            building, and operating ARK Trinity is a private strategic
+            initiative focused on designing, building, and operating
           </p>
 
           <Link
