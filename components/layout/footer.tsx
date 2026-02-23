@@ -76,7 +76,7 @@ const Footer = () => {
       </p>
       <p className="text-center text-gray-500 text-sm font-medium tracking-wide mb-20 text-pretty max-w-[600px] mx-auto">
         ARK Trinity is a private holding and operating institution and is not a
-        licensed fund manager or regulated financial institution under MAS. All
+        licensed invested capital manager or regulated financial institution under MAS. All
         participation is private and non-public. Agreements are governed by
         Singapore law. Forward-looking statements are indicative only.
       </p>
