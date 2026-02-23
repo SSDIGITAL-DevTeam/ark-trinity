@@ -7,7 +7,7 @@ const Footer = () => {
   const quickNavLinks = [
     { label: "Home", href: "/" },
     { label: "About", href: "/about" },
-    { label: "TAM", href: "/market-potential" },
+    { label: "Marketing Potential", href: "/market-potential" },
     { label: "Strategic Model", href: "/strategic-model" },
     { label: "Board", href: "/foundings" },
     // { label: "Insight", href: "/insight" },
@@ -31,8 +31,7 @@ const Footer = () => {
               <Logo variant="light" />
             </Link>
             <p className="text-gray-800 font-semibold leading-relaxed text-pretty">
-              Market Invasion Fund<sup>TM</sup> (MIF) — Making Every $300K
-              Investment into $1M ARR AI Revenue Pods
+              AI-Native Venture Development Platform
             </p>
           </div>
 
