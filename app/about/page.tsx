@@ -183,7 +183,7 @@ export default function AboutPage() {
                 Built for Revenue, Not Fundraising
               </h2>
               <p className="text-gray-800 text-sm leading-relaxed mb-4">
-                Every fund raised has a single mandate:
+                Every invested capital raised has a single mandate:
               </p>
               <ul className="list-disc list-inside text-gray-600 text-sm space-y-2 mb-6">
                 <li>increase revenue,</li>

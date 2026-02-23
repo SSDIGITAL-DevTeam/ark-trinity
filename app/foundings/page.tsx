@@ -120,7 +120,7 @@ export default function FoundingPage() {
               </li>
             </ol>
             <p className="font-bold text-lg mb-2">
-              Every fund raised is governed by three questions:
+              Every invested capital raised is governed by three questions:
             </p>
             <ol className="list-decimal pl-5 space-y-1">
               <li>Does it create real value?</li>
