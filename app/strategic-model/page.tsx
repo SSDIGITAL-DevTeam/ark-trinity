@@ -10,20 +10,26 @@ import {
   LoopIcon,
   EquityIcon,
 } from "@/components/icons/mif-icons";
+import AIRevenuePod from "@/components/sections/mif/AIRevenuePod";
+import OutcomeFocus from "@/components/sections/mif/OutcomeFocus";
+import StrategicParticipation from "@/components/sections/mif/StrategicParticipation";
+import FocusAreas from "@/components/sections/mif/FocusAreas";
+import HowEngagementWorks from "@/components/sections/mif/HowEngagementWorks";
+
 
 export const metadata: Metadata = {
-  title: "Market Invasion Fund (MIF)",
+  title: "Strategic Model",
   description:
-    "The Market Invasion Fund — Where Capital Becomes Intelligent. A strategic capital engine for AI-powered growth.",
+    "The Strategic Model — Where Capital Becomes Intelligent. A strategic capital engine for AI-powered growth.",
   openGraph: {
-    title: "Market Invasion Fund (MIF) | ARK Trinity",
+    title: "Strategic Model | ARK Trinity",
     description:
       "A strategic capital engine that converts investment capital into replicable digital assets across Southeast Asia.",
     images: ["/images/mif/asian_business_tech_meeting_hd.png"],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Market Invasion Fund (MIF) | ARK Trinity",
+    title: "Strategic Model | ARK Trinity",
     description:
       "A strategic capital engine that converts investment capital into replicable digital assets.",
     images: ["/images/mif/asian_business_tech_meeting_hd.png"],
@@ -34,10 +40,25 @@ export default function MIFPage() {
   return (
     <main>
       <PageHero
-        title="MARKET INVASION FUND (MIF)"
+        title="STRATEGIC MODEL"
         image="/images/business-signing.png"
-        subtitle="MIF is ARK Trinity’s capital deployment engine — designed to scale winning team of executors that give us the customers with growing recurring revenues."
+        // subtitle="MIF is ARK Trinity’s capital deployment engine — designed to scale winning team of executors that give us the customers with growing recurring revenues."
       />
+
+      {/* AI Revenue Pod Framework Section */}
+      <AIRevenuePod />
+
+      {/* Outcome & Focus Section */}
+      <OutcomeFocus />
+
+      {/* Strategic Participation Section */}
+      <StrategicParticipation />
+
+      {/* Our Current Focus Areas Section */}
+      <FocusAreas />
+
+      {/* How Engagement Works Section */}
+      <HowEngagementWorks />
 
       <section className="bg-white py-16 md:py-24">
         <div className="container mx-auto px-6 md:px-12 lg:px-16">
@@ -86,7 +107,7 @@ export default function MIFPage() {
       </section>
 
       {/* Principles Section */}
-      <section className="bg-white py-16 md:py-24">
+      <section className="bg-white py-16 md:py-24 hidden">
         <div className="container mx-auto px-6 md:px-12 lg:px-16">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* Protection Principles */}
@@ -338,13 +359,13 @@ export default function MIFPage() {
               href="/contact"
               className="btn btn-error text-white rounded-full px-8"
             >
-              Join the Market Invasion Fund
+              Request Strategic Engagement
             </Link>
           </div>
         </div>
       </section>
 
-      <section className="relative py-10 md:py-14 overflow-hidden">
+      <section className="relative py-10 md:py-14 overflow-hidden hidden">
         <div className="absolute inset-0 bg-linear-to-r from-[#1a0a0a] via-[#3d1515] to-[#5a1c1c]" />
 
         <div className="max-w-7xl mx-auto px-4 md:px-12 relative z-10">
@@ -425,7 +446,7 @@ export default function MIFPage() {
       </section>
 
       {/* Illustrative Benefits Section */}
-      <section className="bg-white py-16 md:py-24">
+      <section className="bg-white py-16 md:py-24 hidden">
         <div className="container mx-auto px-6 md:px-12 lg:px-16">
           <h2 className="text-2xl md:text-3xl font-bold text-error text-center mb-12">
             Illustrative Outcome Scenarios

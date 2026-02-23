@@ -30,7 +30,7 @@ const PillarsSection = () => {
                     </p>
 
                     <Link href="/contact" className="btn btn-lg btn-error text-white border-none rounded-full px-12 h-[60px] text-lg font-bold transition-all duration-300 transform hover:scale-105 shadow-lg">
-                        Join the Market Invasion Fund
+                        Contact Us for Private Discussion
                     </Link>
                 </div>
             </div>

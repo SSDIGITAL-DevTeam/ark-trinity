@@ -1,0 +1,36 @@
+name: End-User Pipeline (Vercel)
+
+on:
+  push:
+    branches: [dev, main]
+
+env:
+  VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+  VERCEL_PROJECT_ID: ${{ secrets.PROJECT_ID_ENDUSER }}
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Vercel CLI
+        run: npm install --global vercel@latest
+      
+      # Logic: Set flag --prod hanya jika branch main
+      - name: Set Environment Flags
+        id: flags
+        run: |
+          if [ "${{ github.ref }}" == "refs/heads/main" ]; then
+            echo "FLAGS=--prod" >> $GITHUB_ENV
+            echo "ENV_TARGET=production" >> $GITHUB_ENV
+          else
+            echo "FLAGS=" >> $GITHUB_ENV # Kosong berarti Preview/Dev
+            echo "ENV_TARGET=preview" >> $GITHUB_ENV
+          fi
+
+      - name: Pull Vercel Env
+        run: vercel pull --yes --environment=${{ env.ENV_TARGET }} --token=${{ secrets.VERCEL_TOKEN }}
+
+      - name: Deploy to Vercel
+        run: vercel deploy ${{ env.FLAGS }} --token=${{ secrets.VERCEL_TOKEN }}

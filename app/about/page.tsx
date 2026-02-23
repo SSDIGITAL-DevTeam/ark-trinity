@@ -1,6 +1,10 @@
 import Image from "next/image";
 import { Metadata } from "next";
 import PageHero from "@/components/ui/page-hero";
+import PlatformFocus from "@/components/sections/about/PlatformFocus";
+import OurApproach from "@/components/sections/about/OurApproach";
+import MissionVisionFounding from "@/components/sections/about/MissionVisionFounding";
+import CoreValues from "@/components/sections/about/CoreValues";
 
 export const metadata: Metadata = {
   title: "About",
@@ -29,189 +33,11 @@ export default function AboutPage() {
         image="/images/homepage/modern_asian_skyscraper_hd.png"
       />
 
-      <section className="bg-[#F5F5F5] py-16 md:py-24">
-        <div className="container mx-auto px-6 md:px-12 lg:px-16">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20">
-            <div>
-              <h2 className="text-3xl md:text-4xl font-bold text-error mb-8">
-                Mission | Vision
-              </h2>
+      <PlatformFocus />
 
-              <div className="relative aspect-video bg-gray-300 rounded-lg overflow-hidden mb-8 shadow-md">
-                <Image
-                  src="/images/about/asian_collaborative_hands_hd.png"
-                  alt="Team collaboration for ARK Trinity mission"
-                  fill
-                  sizes="(max-width: 1024px) 100vw, 50vw"
-                  className="object-cover"
-                />
-              </div>
-
-              <div className="bg-white rounded-lg p-6 mb-4">
-                <h3 className="font-bold text-black text-lg mb-2">Mission</h3>
-                <p className="text-gray-600 text-sm leading-relaxed text-pretty">
-                  To build, own, and scale AI-enabled operating businesses by
-                  unifying capital, digital transformation, and automation into
-                  a single execution architecture.
-                </p>
-              </div>
-
-              <div className="bg-white rounded-lg p-6">
-                <h3 className="font-bold text-black text-lg mb-2">Vision</h3>
-                <p className="text-gray-600 text-sm leading-relaxed text-pretty">
-                  To become a publicly listed AI holding institution that
-                  compounds revenue, customers, and long-term value across
-                  scalable businesses in Southeast Asia and beyond.
-                </p>
-              </div>
-            </div>
-
-            <div>
-              <h2 className="text-3xl md:text-4xl font-bold text-black mb-8">
-                Founding Story
-              </h2>
-
-              <div className="relative">
-                <div className="absolute left-3 top-4 bottom-4 w-0.5 bg-gray-300" />
-
-                <div className="space-y-6">
-                  <div className="flex gap-6">
-                    <div className="relative z-10">
-                      <div className="w-6 h-6 bg-error rounded-full flex items-center justify-center">
-                        <div className="w-2 h-2 bg-white rounded-full" />
-                      </div>
-                    </div>
-                    <div className="flex-1 bg-error rounded-lg p-5 text-white">
-                      <div className="text-2xl font-bold mb-2">2023</div>
-                      <p className="text-sm leading-relaxed opacity-90 text-pretty">
-                        The Brand, Digital Personal Assistant, established to
-                        serve fragmented communications, overlapping works and
-                        inefficiencies works delivered by digital agencies.
-                      </p>
-                    </div>
-                  </div>
-
-                  <div className="flex gap-6">
-                    <div className="relative z-10">
-                      <div className="w-6 h-6 bg-error rounded-full flex items-center justify-center">
-                        <div className="w-2 h-2 bg-white rounded-full" />
-                      </div>
-                    </div>
-                    <div className="flex-1 bg-error rounded-lg p-5 text-white">
-                      <div className="text-2xl font-bold mb-2">2024</div>
-                      <p className="text-sm leading-relaxed opacity-90 text-pretty">
-                        Rolling out of “Digital Marketing Assistant”
-                        (CMO-in-a-box) to replace a full-fledged digital and AI
-                        specialists with the cost of 1 headcount and 1
-                        point-of-contact communication.
-                      </p>
-                    </div>
-                  </div>
-
-                  <div className="flex gap-6">
-                    <div className="relative z-10">
-                      <div className="w-6 h-6 bg-error rounded-full flex items-center justify-center">
-                        <div className="w-2 h-2 bg-white rounded-full" />
-                      </div>
-                    </div>
-                    <div className="flex-1 bg-error rounded-lg p-5 text-white">
-                      <div className="text-2xl font-bold mb-2">2025</div>
-                      <p className="text-sm leading-relaxed opacity-90 text-pretty">
-                        Established Ark Trinity Holding,{" "}
-                        <b>
-                          an AI-native holding institution that uses digital
-                          transformation and automation to multiply revenue,
-                          customers, and values across scalable businesses.
-                          Provide a “leads to appointments” AI empowered
-                          communication that linked with omnichannel integration
-                          in Play/App store.
-                        </b>
-                      </p>
-                    </div>
-                  </div>
-
-                  <div className="flex gap-6">
-                    <div className="relative z-10">
-                      <div className="w-6 h-6 bg-error rounded-full flex items-center justify-center">
-                        <div className="w-2 h-2 bg-white rounded-full" />
-                      </div>
-                    </div>
-                    <div className="flex-1 bg-error rounded-lg p-5 text-white">
-                      <div className="text-2xl font-bold mb-2">2026</div>
-                      <p className="text-sm leading-relaxed opacity-90 text-pretty">
-                        Develop an AI operating system that linked AI-powered
-                        business functions such as AI HR , AI FINANCE, AI
-                        MARKETING & SALES to be a true Digital PA to all
-                        businesses that are moving towards fast-scaling.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="bg-[#F5F5F5] pb-16 md:pb-24">
-        <div className="container mx-auto px-6 md:px-12 lg:px-16">
-          <div className="mb-12 text-center">
-            <h2 className="text-3xl md:text-5xl font-bold text-black mb-4">
-              Values
-            </h2>
-            <p className="text-gray-600 max-w-2xl mx-auto text-pretty hidden">
-              The principles that guide our architecture of intelligent growth.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {/* Discipline */}
-            <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 flex flex-col items-center text-center">
-              <div className="w-12 h-12 bg-error/10 rounded-full flex items-center justify-center mb-6">
-                <div className="w-4 h-4 bg-error rounded-full" />
-              </div>
-              <h3 className="text-xl font-bold text-black mb-3">
-                Capital Consciousness
-              </h3>
-              <p className="text-gray-600 text-sm leading-relaxed text-pretty">
-                We deploy capital responsibly to strengthen businesses, create
-                durable value, and support long-term human and economic
-                progress.
-              </p>
-            </div>
-
-            {/* Integrity */}
-            <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 flex flex-col items-center text-center">
-              <div className="w-12 h-12 bg-error/10 rounded-full flex items-center justify-center mb-6">
-                <div className="w-4 h-4 bg-error rounded-full" />
-              </div>
-              <h3 className="text-xl font-bold text-black mb-3">
-                Authentic Intelligence (AI)
-              </h3>
-              <p className="text-gray-600 text-sm leading-relaxed text-pretty">
-                We build and deploy AI with integrity. As automation scales,
-                authenticity, accountability, and truth in intelligence become
-                increasingly rare — and increasingly essential.
-              </p>
-            </div>
-
-            {/* Consciousness */}
-            <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 flex flex-col items-center text-center">
-              <div className="w-12 h-12 bg-error/10 rounded-full flex items-center justify-center mb-6">
-                <div className="w-4 h-4 bg-error rounded-full" />
-              </div>
-              <h3 className="text-xl font-bold text-black mb-3">
-                Digital Discipline
-              </h3>
-              <p className="text-gray-600 text-sm leading-relaxed text-pretty">
-                We enforce strong digital foundations and operational integrity,
-                enabling businesses to scale, execute, and monetise efficiently
-                without compromising fundamentals.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+      <OurApproach />
+      <MissionVisionFounding />
+      <CoreValues />
 
       {/* WHY ARK TRINITY Section */}
       <section className="bg-white py-16 md:py-24">

@@ -26,19 +26,16 @@ const LegalNotesSection = () => {
                     {/* Right: Content */}
                     <div className="z-10">
                         <h2 className="text-3xl md:text-4xl font-bold text-white mb-5">
-                            Legal Notes
+                            Legal Disclaimer
                         </h2>
                         <p className="text-gray-400 text-sm md:text-base leading-relaxed text-pretty mb-4">
-                            ARK Trinity is a private holding and operating institution and is not a licensed fund manager
-                            or regulated financial institution under the Monetary Authority of Singapore (MAS).
+                            ARK Trinity is a private venture development initiative. Nothing on this website constitutes an offer, solicitation, or invitation to subscribe for or purchase any securities, units in a collective investment scheme, or financial products.
                         </p>
                         <p className="text-gray-400 text-sm md:text-base leading-relaxed text-pretty mb-4">
-                            Any participation or capital alignment is conducted on a private, selective, and non-public
-                            basis through bespoke contractual arrangements.
+                            ARK Trinity is not a licensed fund manager or financial adviser under the Monetary Authority of Singapore. All discussions regarding potential participation are conducted privately, on a case-by-case basis, and subject to applicable laws and regulations.
                         </p>
                         <p className="text-gray-400 text-sm md:text-base leading-relaxed text-pretty">
-                            All agreements are governed by Singapore law, with disputes resolved by arbitration in
-                            Singapore. Any references to targets or future plans are indicative only and subject to change.
+                            This website is for informational purposes only.
                         </p>
                     </div>
 

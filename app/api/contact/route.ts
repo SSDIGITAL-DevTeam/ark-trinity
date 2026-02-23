@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import { TransactionalEmailsApi, SendSmtpEmail } from "@getbrevo/brevo";
+import { BrevoClient } from "@getbrevo/brevo";
 
 // In-memory rate limiting store
 const rateLimitStore = new Map<string, { count: number; resetTime: number }>();
@@ -117,19 +117,20 @@ export async function POST(request: NextRequest) {
         }
 
         // Initialize Brevo API
-        const emailAPI = new TransactionalEmailsApi();
-        emailAPI.setApiKey(0, brevoApiKey);
+        const brevo = new BrevoClient({
+            apiKey: brevoApiKey,
+        });
 
         // Format phone number
         const fullPhone = `${countryCode} ${phone}`;
 
-        // Build email message
-        const sendSmtpEmail = new SendSmtpEmail();
-        sendSmtpEmail.subject = `New Contact Form Submission from ${name}`;
-        sendSmtpEmail.sender = { name: senderName, email: senderEmail };
-        sendSmtpEmail.to = [{ email: adminEmail, name: "Admin" }];
-        sendSmtpEmail.replyTo = { email: email, name: name };
-        sendSmtpEmail.htmlContent = `
+        // Build and send email message via Brevo
+        await brevo.transactionalEmails.sendTransacEmail({
+            subject: `New Contact Form Submission from ${name}`,
+            sender: { name: senderName, email: senderEmail },
+            to: [{ email: adminEmail, name: "Admin" }],
+            replyTo: { email: email, name: name },
+            htmlContent: `
             <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
                 <h2 style="color: #dc2626; border-bottom: 2px solid #dc2626; padding-bottom: 10px;">
                     New Contact Form Submission
@@ -158,8 +159,8 @@ export async function POST(request: NextRequest) {
                     This email was sent from the ARK Trinity contact form.
                 </p>
             </div>
-        `;
-        sendSmtpEmail.textContent = `
+        `,
+            textContent: `
 New Contact Form Submission
 
 Name: ${name}
@@ -171,10 +172,8 @@ ${message}
 
 ---
 This email was sent from the ARK Trinity contact form.
-        `;
-
-        // Send the email via Brevo
-        await emailAPI.sendTransacEmail(sendSmtpEmail);
+        `
+        });
 
         return NextResponse.json({ success: true });
     } catch (error) {
