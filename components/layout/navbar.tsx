@@ -15,8 +15,8 @@ export default function Navbar() {
     const menus: MenuItem[] = [
         { label: "Home", href: "/" },
         { label: "About", href: "/about" },
-        { label: "TAM", href: "/market-potential" },
-        { label: "MIF", href: "/mif" },
+        { label: "Market Potential", href: "/market-potential" },
+        { label: "Strategic Model", href: "/mif" },
         { label: "Board", href: "/foundings" },
     ];
 

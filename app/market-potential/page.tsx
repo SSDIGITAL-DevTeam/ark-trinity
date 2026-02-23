@@ -4,16 +4,16 @@ import PageHero from "@/components/ui/page-hero";
 import MarketGrowthChart from "@/components/charts/market-growth-chart";
 
 export const metadata: Metadata = {
-    title: "Total Addressable Market (TAM)",
+    title: "Market Potential",
     description: "Structural demand driving the next decade of enterprise transformation.",
     openGraph: {
-        title: "Total Addressable Market (TAM) | ARK Trinity",
+        title: "Market Potential | ARK Trinity",
         description: "Structural demand driving the next decade of enterprise transformation.",
         images: ["/images/homepage/modern_asian_skyscraper_hd.png"],
     },
     twitter: {
         card: "summary_large_image",
-        title: "Total Addressable Market (TAM) | ARK Trinity",
+        title: "Market Potential | ARK Trinity",
         description: "Structural demand driving the next decade of enterprise transformation.",
         images: ["/images/homepage/modern_asian_skyscraper_hd.png"],
     },
@@ -23,8 +23,9 @@ export default function MarketPotentialPage() {
     return (
         <main>
             <PageHero
-                title="TOTAL ADDRESSABLE MARKET (TAM)"
+                title="MARKET POTENTIAL"
                 image="/images/market-potential/page-header.png"
+                subtitle="Structural demand driving the next decade of enterprise transformation"
             />
 
             {/* Digital Transformation (DX) Section */}
