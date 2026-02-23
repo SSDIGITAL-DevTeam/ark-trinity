@@ -8,7 +8,7 @@ const Footer = () => {
     { label: "Home", href: "/" },
     { label: "About", href: "/about" },
     { label: "TAM", href: "/market-potential" },
-    { label: "MIF", href: "/mif" },
+    { label: "Strategic Model", href: "/strategic-model" },
     { label: "Board", href: "/foundings" },
     // { label: "Insight", href: "/insight" },
     { label: "Contact", href: "/contact" },
