@@ -30,9 +30,10 @@ const Footer = () => {
             <Link href="/" className="flex items-center">
               <Logo variant="light" />
             </Link>
-            <p className="text-gray-800 font-semibold leading-relaxed text-pretty">
+            <h4 className="text-gray-800 text-lg font-semibold leading-relaxed text-pretty mb-1">
               AI-Native Venture Development Platform
-            </p>
+            </h4>
+            <p>Building scalable AI-enabled operating ventures across Southeast Asia and Asia Pacific.</p>
           </div>
 
           {/* Middle Column: Quick Navigation */}
